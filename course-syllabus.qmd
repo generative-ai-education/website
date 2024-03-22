@@ -2,26 +2,24 @@
 title: "Syllabus"
 ---
 
-::: {.content-visible when-format="html"}
-[**Click here**](syllabus.pdf) **to download a PDF copy of the syllabus.**
-:::
-
 
 ## Course info
 
 |           | Day       | Time              | Location |
 |-----------|-----------|-------------------|----------|
-| Lecture   | xyz    | xx:xx  - xx:xx xx |  xx  |
-
+| Lecture   | Monday    | 10:00  - 12:30 pm |  [S202](https://horst.hdm-stuttgart.de/S202)  |
 
 
 ## Learning objectives
 
-This course teaches you the fundamentals of 
+This course explores the transformative potential of generative artificial intelligence (AI) in the realms of teaching and learning. Students will engage with the latest advancements in generative AI technologies to understand their applications in automating content creation, personalizing learning materials, and fostering interactive and adaptive learning environments. Through lectures, hands-on projects, and research, participants will investigate how generative AI can make educational processes more efficient, accessible, and engaging.
 
-By the end of the semester, you will be able to...
+By the end of this course, students will be able to:
 
-
+- Understand the fundamental principles of generative AI and its relevance to education.
+- Critically analyze the potential impacts of generative AI on traditional teaching and learning paradigms.
+- Design and prototype innovative educational tools and approaches utilizing generative AI.
+- Assess the ethical and practical considerations of implementing AI in educational settings.
 
 
 ## Where to get help
@@ -32,93 +30,97 @@ By the end of the semester, you will be able to...
 
 Check out the [Support](course-support.qmd) page for more resources.
 
-## Textbooks
+<!-- ## Textbooks
 
 This course is mainly based on the following resources:
+ -->
+
+## Course Assessment 
+
+### Overview
+
+| Assessment Criteria                             | Points |
+|-------------------------------------------------|--------|
+| **1. Project Concept and Design Thinking Application** | **30** |
+| Understanding and Empathy                       | 10     |
+| Ideation                                        | 10     |
+| Prototype Planning                              | 10     |
+| **2. Mock-up and Prototyping**                          | **40** |
+| Fidelity and Functionality of Mock-ups         | 15     |
+| Prototype Development                           | 15     |
+| Innovation and Creativity                       | 10     |
+| **3. Presentation**                                     | **15** |
+| Clarity and Organization                        | 5      |
+| Engagement and Delivery                         | 5      |
+| Visual and Technical Quality                    | 5      |
+| **4. Documentation Using Design Science Research Method** | **15** |
+| Problem Identification and Motivation          | 5      |
+| Methodology and Application of Design Science  | 5      |
+| Evaluation and Contribution                     | 5      |
+| **Total**                                               | **100** |
 
 
+### 1. Project Concept and Design Thinking Application (30 Points)
+- **Understanding and Empathy (10 Points):** 
+  - Clear identification and articulation of the educational problem or opportunity.
+  - Evidence of thorough research into user needs and context using user personas and jobs to be done framework.
 
-## Lectures
+- **Ideation (10 Points):** 
+  - Creativity and feasibility in generating solutions.
+  - Inclusion of diverse ideas reflecting a deep understanding of the problem space.
 
-A lot of what you do in this course will involve writing code, and coding is a skill that is best learned by doing.
-Therefore, as much as possible, you will be working on a variety of tasks and activities throughout each lecture.
+- **Prototype Planning (10 Points):** 
+  - Rational selection of ideas for prototyping.
+  - Justification of selected concepts with respect to user needs and project goals.
 
-You are expected to bring a laptop to each class so that you can take part in the in-class exercises.
+### 2. Mock-up and Prototyping (40 Points)
+- **Fidelity and Functionality of Mock-ups (15 Points):** 
+  - Clarity, detail, and realism of Figma mock-ups.
+  - Mock-ups should accurately represent the proposed solution's look and feel.
 
+- **Prototype Development (15 Points):** 
+  - The prototype's functionality, usability, and alignment with mock-up designs.
+  - Evaluation of the prototype's ability to effectively address the identified problem.
 
-## Teams
+- **Innovation and Creativity (10 Points):** 
+  - Originality of the solution and creative use of technology in the prototype.
+  - The solution's potential impact on the educational challenge it aims to address.
 
-You will be assigned to a team at the beginning of the semester.
+### 3. Presentation (15 Points)
+- **Clarity and Organization (5 Points):** 
+  - The presentation is well-structured, with clear objectives, findings, and conclusions.
+  - Effective communication of the project's value and impact.
 
-All team members are expected to contribute equally to the completion of the labs and project and you will be asked to evaluate your team members throughout the semester.
-Failure to adequately contribute to an assignment will result in a penalty to your mark relative to the team's overall mark.
+- **Engagement and Delivery (5 Points):** 
+  - Ability to engage the audience, answer questions confidently, and demonstrate deep knowledge of the project.
 
-You are expected to make use of the provided GitHub repository as the central collaborative platform. [Commits](https://github.com/git-guides/git-commit) to this repository will be used as a metric (one of several) of each team member's relative contribution for each project.
+- **Visual and Technical Quality (5 Points):** 
+  - Use of visuals, demonstrations, and/or multimedia to enhance presentation effectiveness.
+  - Technical fluency in showcasing the prototype.
 
-## Assessment
+### 4. Documentation Using Design Science Research Method (15 Points)
+- **Problem Identification and Motivation (5 Points):** 
+  - Clear articulation of the problem area, research questions, and the project's relevance to the field of education.
 
-Assessment for the course is comprised of these components: 
+- **Methodology and Application of Design Science (5 Points):** 
+  - Comprehensive documentation of the design process, including rationale behind design choices and methodologies employed (e.g., user personas, jobs to be done framework).
+  - Reflection on the design thinking process.
 
-- [application exercises](@sec-application-exercises)
-- [homework assignments](@sec-hw) 
-- [project](@sec-project)
+- **Evaluation and Contribution (5 Points):** 
+  - Critical assessment of the prototype's effectiveness in addressing the problem identified.
+  - Discussion of the project's contributions to educational technology and suggestions for future research.
 
+### Additional Guidelines:
+- **Collaboration:** Students are encouraged to work in teams, but individual contributions must be clearly defined.
+- **Ethical Considerations:** Projects must adhere to ethical standards, particularly in the use of data and consideration of privacy and accessibility.
+- **Progress Updates:** Regular check-ins or progress reports are recommended to ensure projects stay on track and align with course objectives.
 
-### Application exercises {#sec-application-exercises}
-
-Parts of some lectures will be dedicated to working on "Application Exercises" (AE). These small exercises will give you an opportunity to practice apply the concepts and code introduced in the readings and lectures. 
-
-AEs should be completed and **submitted individually**.
-
-:::{Note}
-AEs are due within six days after lecture
-:::
-
-The AEs are due within **six days** after the corresponding lecture. For example, AEs from a Monday lecture would be due Sunday by 11:59 pm.
-
-Because these AEs are for practice, they will be graded based on completion. Successful on-time completion of at least 80% of every AE will result in full credit in the final course grade. 
-
-
-### Homework {#sec-hw}
-
-In homeworks (HW), you will apply what you've learned during lectures to complete data analysis and visualization‚ tasks using data not covered during lectures.
-
-You may discuss homework assignments with other students; however, homework should be completed and **submitted individually**.
-
-Homework must be completed in the provided Jupyter Notebooks in your course GitHub-repo and also submitted in Moodle.
-
-
-
-### Exams {#sec-exams}
-
-There will be two exams in Moodle.
-Through these exams you have the opportunity to demonstrate what you've learned in the course thus far.
-
-
-More details about the exams will be given during the semester.
-
-
-
-### Project {#sec-project}
-
-The purpose of the [project](project-description.qmd) is to apply what you've learned throughout the semester to analyze an interesting, data-driven research question. The project will be completed in **teams**.
-
-More information about the project will be provided during the semester.
 
 ## Grading
 
-The final course grade will be calculated as follows:
-
-| Category              | Percentage      |
-|-----------------------|-----------------|
-| Application exercises | 10%             |
-| Homework              | 40%             |
-| Project               | 50%             |
-
-
 The final grade will be determined based on the following thresholds:
 
-|  Grade       | Final Course Grade |
+|  Grade       | Points |
 |--------------|--------------------|
 | 1.0           | 96 - 100          |
 | 1.3           | 91 - 95           |
@@ -135,48 +137,9 @@ The final grade will be determined based on the following thresholds:
 
 
 
-## Course policies
-
-### Academic integrity
-
-**TL;DR: Don't cheat!**
-
-All students must adhere to the academic integrity standard. Students affirm their commitment to uphold the values by signing a pledge that states:
-
--   I will not lie, cheat, or steal in my academic endeavors;
--   I will conduct myself honorably in all my endeavors;
--   I will act if the standard is compromised
-
-Regardless of the course delivery format, it is your responsibility to understand and follow HdM policies regarding academic integrity, including doing one's own work, following proper citation of sources, and adhering to guidance around group work projects.
-
-
-### Collaboration policy
-
-Only work that is clearly assigned as team work should be completed collaboratively.
-
--   The *homework* assignments must be completed individually and you are welcomed to discuss the assignment with classmates at a high level (e.g., discuss what's the best way for approaching a problem, what functions are useful for accomplishing a particular task, etc.). However you may not directly share answers to homework questions (including any code) with anyone other than myself and the teaching assistants.
-
--   For the *projects*, collaboration within teams is not only allowed, but expected. Communication between teams at a high level is also allowed however you may not share code or components of the project across teams.
-
-
-### Policy on sharing and reusing code
-
-I am well aware that a huge volume of code is available on the web to solve any number of problems.
-
-Unless I explicitly tell you not to use something, the course's policy is that you may make use of any online resources (e.g. [StackOverflow](https://stackoverflow.com/)) but you must explicitly cite where you obtained any code you directly use (or use as inspiration).
-
-Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.
-
-On individual assignments you may not directly share code with another student in this class, and on team assignments you may not directly share code with another team in this class.
-
-### Late work policy
+## Late work policy
 
 The due dates for assignments are there to help you keep up with the course material. However, I understand that things come up periodically that could make it difficult to submit an assignment by the deadline. Here are the rules for late submissions:
-
--   *Homeworks* may be submitted up to 3 days late.
-    There will be a 25% deduction for each 24-hour period the assignment is late.
-
--   There is no late work accepted for *application exercises*, since these are designed to help you prepare for homeworks.
 
 -   Project taks may be submitted up to 2 days late. There will be a 25% deduction for each 24-hour period the project task is late.
 
