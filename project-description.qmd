@@ -1,98 +1,46 @@
 ---
-title: "Project description"
+title: "Project"
 ---
 
 
-## Timeline
+## Project deadlines
 
 
 | Week | Date       | Milestone                                            | Description                                                                                       |
 |------|------------|------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| 1-3  | 25.03 - 15.04 | Course Introduction                                  | Introduction to course, project guidelines, and initial brainstorming sessions                   |
-| 4    | 22.04      | Understanding and Empathy Assignment Due             | Submission of problem identification, user personas, and jobs to be done analysis                 |
-| 6    | 06.05      | Ideation and Prototype Planning Assignment Due       | Submission of ideas and selected concept for prototyping, including justifications                |
-| 8    | 20.05      | Fidelity and Functionality of Mock-ups Due           | Submission of detailed mock-ups using tools like Figma                                            |
-| 11   | 10.06      | Prototype Development Completion and Submission      | Hand in developed prototypes with a video demonstration or interactive link                       |
-| 13   | 24.06      | Documentation Draft Due                              | Initial draft of project documentation using the Design Science Research Method for feedback      |
-| 15   | 08.07      | Final Documentation and Prototype Due                | Submission of complete project documentation, incorporating any revisions, and final prototype    |
-| 16   | 15.07      | Final Presentation                                   | Students present their final projects showcasing their prototypes and development journey        |
+| 4    | 15.04      | Understanding and Empathy Assignment Due             | Submission of problem identification, user personas, and jobs to be done analysis                 |
+| 6    | 29.04      | Ideation and Prototype Planning Assignment Due       | Submission of ideas and selected concept for prototyping, including justifications                |
+| 8    | 13.05      | Fidelity and Functionality of Mock-ups Due           | Submission of detailed mock-ups using tools like Figma                                            |
+| 10   | 27.05      | Prototype Development Completion and Submission      | Hand in developed prototypes with a video demonstration or interactive link                       |
+| 12   | 10.06      | Documentation Draft Due                              | Initial draft of project documentation using the Design Science Research Method for feedback      |
+| 14   | 24.06      | Final Documentation and Prototype Due                | Submission of complete project documentation, incorporating any revisions, and final prototype    |
+| 15   | 01.07      | Final Presentation                                   | Students present their final projects showcasing their prototypes and development journey        |
 
 
-```{mermaid}
-gantt
-    dateFormat  MM-DD
-    title       Course Project Timeline
-
-    section Introduction
-    Introduction :active, 2023-03-25, 2023-04-15
-
-    section Understanding
-    User Analysis :2023-04-16, 2023-04-22
-
-    section Ideation
-    Ideation :2023-04-23, 2023-05-06
-
-    section Mock-up
-    Mock-up :2023-05-07, 2023-05-20
-
-    section Prototype
-    Prototype :2023-05-21, 2023-06-10
-
-    section Documentation
-    Draft :2023-06-11, 2023-06-24
-    Finalize :2023-06-25, 2023-07-08
-
-    section Presentation
-    Presentation :2023-07-09, 2023-07-15
-
-
-```
-
-
-
-```{mermaid}
-gantt
-    dateFormat  MM-DD
-    title       Key Phases Overview (Dates MM-DD)
-
-    section Initial Phase
-    Introduction :active, 2023-03-25, 2023-04-15
-    User Analysis :after, 20d
-
-    section Development Phase
-    Idea Generation, Selection & Mock-up Development :after, 20d
-    Prototype Development & Testing :after, 25d
-
-    section Finalization Phase
-    Documentation & Final Prep :after, 20d
-    Prepare & Deliver Presentation :after, 15d
-
-
-```
 
 
 ### Hand-in Explanations
 
-#### Week 4: Understanding and Empathy Assignment Due (22.04)
+#### Week 4: Understanding and Empathy Assignment 
 
 - **Main Tasks:** Identify the educational challenge your project will address. Create detailed user personas and conduct a jobs to be done analysis to understand the needs and motivations of your target users. Document your findings clearly.
 
 
-#### Week 6: Ideation and Prototype Planning Assignment Due (06.05)
+#### Week 6: Ideation and Prototype Planning Assignment 
 
 - **Main Tasks:** Generate a wide range of ideas to address the identified challenge. Select the most promising concept based on criteria like feasibility, impact, and innovation. Outline your prototype planning, including the scope and key features of your selected concept.
 
-#### Week 8: Fidelity and Functionality of Mock-ups Due (20.05)
+#### Week 8: Fidelity and Functionality of Mock-ups  
 - **Main Tasks:** Use Figma or a similar tool to create detailed mock-ups of your solution. These should visually communicate the design and functionality of your concept, including user interface and user experience aspects.
 
-#### Week 11: Prototype Development Completion and Submission (10.06)
+#### Week 10: Prototype Development Completion and Submission 
 - **Main Tasks:** Develop a working prototype that brings your mock-ups to life. Ensure that the prototype is functional and demonstrates the key features of your solution. Prepare a video demonstration or an interactive link to showcase your prototype.
 
-#### Week 13: Documentation Draft Due (24.06)
+#### Week 12: Documentation Draft 
 - **Main Tasks:** Draft your project documentation using the Design Science Research Method. Include sections on problem identification, methodology, prototype development, and initial evaluations. Highlight how your project applies design thinking principles.
 
-#### Week 15: Final Documentation and Prototype Due (08.07)
+#### Week 14: Final Documentation and Prototype 
 - **Main Tasks:** Finalize your project documentation, incorporating feedback received on your draft. Ensure that all sections are comprehensive and reflective of your project's development process. Submit the final version of your prototype, ready for presentation.
 
-#### Week 16: Final Presentation (15.07)
+#### Week 15: Final Presentation 
 - **Main Tasks:** Present your project to the class, focusing on the problem identified, your design process, prototype development, and the potential impact of your solution. Be prepared to answer questions and discuss your project in depth.
