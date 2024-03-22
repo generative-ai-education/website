@@ -78,8 +78,7 @@ format:
   html:
     toc: true
     theme:
-      light: [cosmo, style/theme.scss]
-      dark: [cosmo, style/theme.scss, style/dark.scss]
-    mainfont: "Atkinson Hyperlegible"
+      light: cosmo
+      dark: cosmo
     code-copy: true
     code-overflow: wrap
