@@ -2,7 +2,7 @@
 title: "Course overview"
 ---
 
-![](/images/logo.png){width="50%"}
+<!-- ![](/images/logo.png){width="50%"} -->
 
 
 Generative AI has the potential to fundamentally change the way we teach and learn. By automating content creation, personalizing learning materials, and supporting interactive and adaptive learning environments, generative AI can help make educational processes more efficient, accessible, and engaging.
