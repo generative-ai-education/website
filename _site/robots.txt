@@ -1,1 +1,1 @@
-Sitemap: https://xyz.github.io/website/sitemap.xml
+Sitemap: https://generative-ai-education.github.io/website/sitemap.xml
