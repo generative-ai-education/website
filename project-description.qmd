@@ -18,6 +18,36 @@ title: "Project description"
 | 16   | 15.07      | Final Presentation                                   | Students present their final projects showcasing their prototypes and development journey        |
 
 
+```{mermaid}
+gantt
+    dateFormat  YYYY-MM-DD
+    title       Course Project Timeline
+
+    section Course Introduction
+    Course Introduction & Brainstorming :active, 2023-03-25, 2023-04-15
+
+    section Understanding and Empathy
+    Identify Challenge & User Analysis :2023-04-16, 2023-04-22
+
+    section Ideation and Prototype Planning
+    Idea Generation & Concept Selection :2023-04-23, 2023-05-06
+
+    section Mock-up Creation
+    Mock-up Development in Figma :2023-05-07, 2023-05-20
+
+    section Prototype Development
+    Prototype Development & Testing :2023-05-21, 2023-06-10
+
+    section Documentation
+    Draft Documentation :2023-06-11, 2023-06-24
+    Finalize Documentation :2023-06-25, 2023-07-08
+
+    section Final Presentation
+    Prepare & Deliver Presentation :2023-07-09, 2023-07-15
+
+
+```
+
 ### Hand-in Explanations
 
 #### Week 4: Understanding and Empathy Assignment Due (22.04)
