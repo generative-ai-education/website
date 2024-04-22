@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Generative AI in Education - Project</title>
+<title>Generative AI in Education - Anaconda Environment</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -29,8 +63,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./project-tips-resources.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./programming-requirements.html" rel="prev">
 <link href=".//images/logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -71,7 +104,8 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Generative AI in Education - Project">
+<meta property="og:title" content="Generative AI in Education - Anaconda Environment">
+<meta property="og:description" content="Homepage for Generatibve AI project at HdM Stuttgart, SS 2024.">
 <meta property="og:image" content="https://generative-ai-education.github.io/website//images/logo.png">
 <meta property="og:site_name" content="Generative AI in Education">
 <meta property="og:image:height" content="425">
@@ -87,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./project-description.html">Project</a></li><li class="breadcrumb-item"><a href="./project-description.html">Description</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./programming-requirements.html">Programming</a></li><li class="breadcrumb-item"><a href="./anaconda-environment.html">Anaconda Environment</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -148,16 +182,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
  <span class="menu-text">Project</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./project-description.html" class="sidebar-item-text sidebar-link active">
+  <a href="./project-description.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Description</span></a>
   </div>
 </li>
@@ -171,13 +205,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
  <span class="menu-text">Programming</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./programming-requirements.html" class="sidebar-item-text sidebar-link">
@@ -186,7 +220,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./anaconda-environment.html" class="sidebar-item-text sidebar-link">
+  <a href="./anaconda-environment.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Anaconda Environment</span></a>
   </div>
 </li>
@@ -202,19 +236,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#project-deadlines" id="toc-project-deadlines" class="nav-link active" data-scroll-target="#project-deadlines">Project deadlines</a>
+  <li><a href="#creating-the-project-structure" id="toc-creating-the-project-structure" class="nav-link active" data-scroll-target="#creating-the-project-structure"><span class="header-section-number">1</span> Creating the Project Structure</a></li>
+  <li><a href="#downloading-the-yaml-file" id="toc-downloading-the-yaml-file" class="nav-link" data-scroll-target="#downloading-the-yaml-file"><span class="header-section-number">2</span> Downloading the YAML File</a>
   <ul class="collapse">
-  <li><a href="#hand-in-explanations" id="toc-hand-in-explanations" class="nav-link" data-scroll-target="#hand-in-explanations">Hand-in Explanations</a></li>
+  <li><a href="#understanding-curl-and-its-parameters" id="toc-understanding-curl-and-its-parameters" class="nav-link" data-scroll-target="#understanding-curl-and-its-parameters"><span class="header-section-number">2.1</span> Understanding <code>curl</code> and Its Parameters</a></li>
+  </ul></li>
+  <li><a href="#setting-up-the-anaconda-environment" id="toc-setting-up-the-anaconda-environment" class="nav-link" data-scroll-target="#setting-up-the-anaconda-environment"><span class="header-section-number">3</span> Setting Up the Anaconda Environment</a>
+  <ul class="collapse">
+  <li><a href="#understanding-the-yml-file-in-its-content" id="toc-understanding-the-yml-file-in-its-content" class="nav-link" data-scroll-target="#understanding-the-yml-file-in-its-content"><span class="header-section-number">3.1</span> Understanding the YML-file in its Content</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/generative-ai-education/website/edit/main/project-description.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/generative-ai-education/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/generative-ai-education/website/edit/main/anaconda-environment.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/generative-ai-education/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./project-description.html">Project</a></li><li class="breadcrumb-item"><a href="./project-description.html">Description</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./programming-requirements.html">Programming</a></li><li class="breadcrumb-item"><a href="./anaconda-environment.html">Anaconda Environment</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Project</h1>
+<h1 class="title">Anaconda Environment</h1>
 </div>
 
 
@@ -231,114 +270,118 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="project-deadlines" class="level2">
-<h2 class="anchored" data-anchor-id="project-deadlines">Project deadlines</h2>
-<table class="table">
-<colgroup>
-<col style="width: 3%">
-<col style="width: 7%">
-<col style="width: 31%">
-<col style="width: 57%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Week</th>
-<th>Date</th>
-<th>Milestone</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>4</td>
-<td>15.04</td>
-<td>Understanding and Empathy Assignment Due</td>
-<td>Submission of problem identification, user personas, and jobs to be done analysis</td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td>29.04</td>
-<td>Ideation and Prototype Planning Assignment Due</td>
-<td>Submission of ideas and selected concept for prototyping, including justifications</td>
-</tr>
-<tr class="odd">
-<td>8</td>
-<td>13.05</td>
-<td>Fidelity and Functionality of Mock-ups Due</td>
-<td>Submission of detailed mock-ups using tools like Figma</td>
-</tr>
-<tr class="even">
-<td>10</td>
-<td>27.05</td>
-<td>Prototype Development Completion and Submission</td>
-<td>Hand in developed prototypes with a video demonstration or interactive link</td>
-</tr>
-<tr class="odd">
-<td>12</td>
-<td>10.06</td>
-<td>Documentation Draft Due</td>
-<td>Initial draft of project documentation using the Design Science Research Method for feedback</td>
-</tr>
-<tr class="even">
-<td>14</td>
-<td>24.06</td>
-<td>Final Documentation and Prototype Due</td>
-<td>Submission of complete project documentation, incorporating any revisions, and final prototype</td>
-</tr>
-<tr class="odd">
-<td>15</td>
-<td>01.07</td>
-<td>Final Presentation</td>
-<td>Students present their final projects showcasing their prototypes and development journey</td>
-</tr>
-</tbody>
-</table>
-<section id="hand-in-explanations" class="level3">
-<h3 class="anchored" data-anchor-id="hand-in-explanations">Hand-in Explanations</h3>
-<section id="week-4-understanding-and-empathy-assignment" class="level4">
-<h4 class="anchored" data-anchor-id="week-4-understanding-and-empathy-assignment">Week 4: Understanding and Empathy Assignment</h4>
+<p>The following setup provides a comprehensive approach for both Windows and Mac users to create a structured project directory, download necessary files, and set up an isolated Python environment for our project.</p>
+<p>By following these instructions, you will have a consistent and reproducible development environment, which is crucial for academic and professional projects.</p>
+<section id="creating-the-project-structure" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="creating-the-project-structure"><span class="header-section-number">1</span> Creating the Project Structure</h2>
 <ul>
-<li><strong>Main Tasks:</strong> Identify the educational challenge your project will address. Create detailed user personas and conduct a jobs to be done analysis to understand the needs and motivations of your target users. Document your findings clearly.</li>
+<li><p>For Windows Users: Open Command Prompt (you can do this by typing <code>cmd</code> in the Windows search bar and hitting Enter).</p></li>
+<li><p>For Mac Users: Open Terminal (you can find this in the Applications folder under Utilities, or use Spotlight by pressing Cmd + Space and typing “Terminal”).</p></li>
+</ul>
+<ol type="1">
+<li>Create a new folder called <code>genai</code>:</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> genai</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="2" type="1">
+<li>Navigate into the <code>genai</code> folder:</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> genai</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="3" type="1">
+<li>Create a subfolder called <code>anaconda-env</code>:</li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> anaconda-env</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="4" type="1">
+<li>Navigate into the subfolder</li>
+</ol>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> anaconda-env</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="downloading-the-yaml-file" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="downloading-the-yaml-file"><span class="header-section-number">2</span> Downloading the YAML File</h2>
+<p>We use <code>curl</code> to download the YAML file (I assume you are in the folder <code>anaconda-env</code>). This ensures the file is saved in the right place. You can check if you are in the right path as follows:</p>
+<ul>
+<li><p>Mac: To print the current directory path in the Terminal, you can use the command <code>pwd</code> (print working directory) without any arguments.</p></li>
+<li><p>Windows: To print the current directory path in the Windows Command Prompt, you can use the cd command without any arguments. Simply type: <code>cd</code></p></li>
+</ul>
+<p>Now use the <code>curl</code> command to download the <code>env-genai.yml</code> file:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-LJO</span> https://raw.githubusercontent.com/kirenz/environments/main/ss2024/env-genai.yml</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="understanding-curl-and-its-parameters" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="understanding-curl-and-its-parameters"><span class="header-section-number">2.1</span> Understanding <code>curl</code> and Its Parameters</h3>
+<p>After downloading the file, let’s revisit what the <code>curl</code> command does:</p>
+<ul>
+<li><strong><code>-L</code></strong>: Follows any redirects which the server might send as part of the request.</li>
+<li><strong><code>-J</code></strong>: Uses the header-provided filename to save the file.</li>
+<li><strong><code>-O</code></strong>: Saves the file locally with the same name as the filename on the server.</li>
 </ul>
 </section>
-<section id="week-6-ideation-and-prototype-planning-assignment" class="level4">
-<h4 class="anchored" data-anchor-id="week-6-ideation-and-prototype-planning-assignment">Week 6: Ideation and Prototype Planning Assignment</h4>
-<ul>
-<li><strong>Main Tasks:</strong> Generate a wide range of ideas to address the identified challenge. Select the most promising concept based on criteria like feasibility, impact, and innovation. Outline your prototype planning, including the scope and key features of your selected concept.</li>
-</ul>
 </section>
-<section id="week-8-fidelity-and-functionality-of-mock-ups" class="level4">
-<h4 class="anchored" data-anchor-id="week-8-fidelity-and-functionality-of-mock-ups">Week 8: Fidelity and Functionality of Mock-ups</h4>
+<section id="setting-up-the-anaconda-environment" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="setting-up-the-anaconda-environment"><span class="header-section-number">3</span> Setting Up the Anaconda Environment</h2>
+<p><strong>Important Note:</strong> Before proceeding with the creation of the Anaconda environment, ensure you are in the <code>anaconda-env</code> folder where the <code>env-genai.yml</code> file is located. This is crucial because the <code>conda</code> command looks for the YAML file in your current directory.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Windows-User">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Windows-User
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Open Anaconda Command Prompt and navigate to the subfolder genai/anaconda-env:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ..<span class="dt">\g</span>enai<span class="dt">\a</span>naconda-env</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Mac-User">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Mac-User
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Open the Terminal or use the integrated Terminal in VS Code. Navigate to the subfolder data-collection:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~/genai/anaconda-env</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<p>Create the Anaconda Environment:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> env create <span class="at">-f</span> env-genai.yml</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This command will create a new environment named <code>genai</code> and install all the dependencies listed in the YAML file.</p>
+<p><strong>Activate the Environment:</strong></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate genai</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Activating the environment will switch your current session to use the Python version and libraries specified in the environment.</p>
+<section id="understanding-the-yml-file-in-its-content" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="understanding-the-yml-file-in-its-content"><span class="header-section-number">3.1</span> Understanding the YML-file in its Content</h3>
+<p><strong>YAML File</strong>: YAML (YAML Ain’t Markup Language) is a human-readable data serialization standard that can be used for configuration files and other forms of data that need to be stored and transmitted. In the context of Anaconda, a YAML file specifies the environment’s name, the channels to install packages from, and the list of dependencies.</p>
+<p>This Anaconda YAML file is used to create a specific environment named “genai” with a set of predefined packages and dependencies. Here’s a breakdown of its components:</p>
 <ul>
-<li><strong>Main Tasks:</strong> Use Figma or a similar tool to create detailed mock-ups of your solution. These should visually communicate the design and functionality of your concept, including user interface and user experience aspects.</li>
-</ul>
-</section>
-<section id="week-10-prototype-development-completion-and-submission" class="level4">
-<h4 class="anchored" data-anchor-id="week-10-prototype-development-completion-and-submission">Week 10: Prototype Development Completion and Submission</h4>
+<li><p><strong>name</strong>: Specifies the name of the environment, which is “genai” in this case.</p></li>
+<li><p><strong>channels</strong>: Defines the sources where the packages will be downloaded from. It includes “conda-forge” and “defaults”. Conda-forge is a community-led collection of recipes, build infrastructure, and distributions for the conda package manager.</p></li>
+<li><p><strong>dependencies</strong>: Lists the packages and versions that will be installed in the environment:</p>
 <ul>
-<li><strong>Main Tasks:</strong> Develop a working prototype that brings your mock-ups to life. Ensure that the prototype is functional and demonstrates the key features of your solution. Prepare a video demonstration or an interactive link to showcase your prototype.</li>
-</ul>
-</section>
-<section id="week-12-documentation-draft" class="level4">
-<h4 class="anchored" data-anchor-id="week-12-documentation-draft">Week 12: Documentation Draft</h4>
+<li><strong>python=3.11</strong>: Installs Python version 3.11.</li>
+<li><strong>pip</strong>: Ensures that pip, the Python package installer, is available in the environment.</li>
+<li><strong>pip:</strong>: Under this entry, it specifies additional Python packages to be installed via pip:
 <ul>
-<li><strong>Main Tasks:</strong> Draft your project documentation using the Design Science Research Method. Include sections on problem identification, methodology, prototype development, and initial evaluations. Highlight how your project applies design thinking principles.</li>
+<li><strong>pandas</strong>: A library providing high-performance, easy-to-use data structures and data analysis tools.</li>
+<li><strong>streamlit</strong>: A tool for creating and sharing custom web apps for machine learning and data science.</li>
+<li><strong>langchain</strong>: Likely a library for language model applications, although the exact purpose may vary depending on the specific package details.</li>
+<li><strong>openai</strong>: Provides access to the APIs of OpenAI, including capabilities like GPT models.</li>
+<li><strong>streamlit-feedback</strong>: An extension for Streamlit to gather user feedback within Streamlit apps.</li>
+<li><strong>python-dotenv</strong>: A dependency that allows your application to load environment variables from a <code>.env</code> file which is useful for managing app settings during development and in production.</li>
+</ul></li>
+</ul></li>
 </ul>
-</section>
-<section id="week-14-final-documentation-and-prototype" class="level4">
-<h4 class="anchored" data-anchor-id="week-14-final-documentation-and-prototype">Week 14: Final Documentation and Prototype</h4>
-<ul>
-<li><strong>Main Tasks:</strong> Finalize your project documentation, incorporating feedback received on your draft. Ensure that all sections are comprehensive and reflective of your project’s development process. Submit the final version of your prototype, ready for presentation.</li>
-</ul>
-</section>
-<section id="week-15-final-presentation" class="level4">
-<h4 class="anchored" data-anchor-id="week-15-final-presentation">Week 15: Final Presentation</h4>
-<ul>
-<li><strong>Main Tasks:</strong> Present your project to the class, focusing on the problem identified, your design process, prototype development, and the potential impact of your solution. Be prepared to answer questions and discuss your project in depth.</li>
-</ul>
+<p>This YAML file helps in managing the environment setup by ensuring that all necessary dependencies are installed using Conda and pip, thereby standardizing the environment setup and facilitating reproducibility across different machines and setups.</p>
 
 
-</section>
 </section>
 </section>
 
@@ -898,14 +941,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Schedule">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Schedule</span>
+      <a href="./programming-requirements.html" class="pagination-link" aria-label="Requirements">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Requirements</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./project-tips-resources.html" class="pagination-link" aria-label="Tips + resources">
-        <span class="nav-page-text">Tips + resources</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -927,7 +967,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/generative-ai-education/website/edit/main/project-description.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/generative-ai-education/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/generative-ai-education/website/edit/main/anaconda-environment.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/generative-ai-education/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
