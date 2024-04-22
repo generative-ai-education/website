@@ -115,7 +115,6 @@ This Anaconda YAML file is used to create a specific environment named "genai" w
   - **pip:**: Under this entry, it specifies additional Python packages to be installed via pip:
     - **pandas**: A library providing high-performance, easy-to-use data structures and data analysis tools.
     - **streamlit**: A tool for creating and sharing custom web apps for machine learning and data science.
-    - **langchain**: Likely a library for language model applications, although the exact purpose may vary depending on the specific package details.
     - **openai**: Provides access to the APIs of OpenAI, including capabilities like GPT models.
     - **streamlit-feedback**: An extension for Streamlit to gather user feedback within Streamlit apps.
     - **python-dotenv**: A dependency that allows your application to load environment variables from a `.env` file which is useful for managing app settings during development and in production.
