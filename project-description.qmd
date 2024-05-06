@@ -21,26 +21,26 @@ title: "Project"
 
 ### Hand-in Explanations
 
-#### Week 4: Understanding and Empathy Assignment 
+#### Nr. 1: Understanding and Empathy Assignment 
 
 - **Main Tasks:** Identify the educational challenge your project will address. Create detailed user personas and conduct a jobs to be done analysis to understand the needs and motivations of your target users. Document your findings clearly.
 
 
-#### Week 6: Ideation and Prototype Planning Assignment 
+#### Nr. 2: Ideation and Prototype Planning Assignment 
 
 - **Main Tasks:** Generate a wide range of ideas to address the identified challenge. Select the most promising concept based on criteria like feasibility, impact, and innovation. Outline your prototype planning, including the scope and key features of your selected concept.
 
-#### Week 8: Fidelity and Functionality of Mock-ups  
+#### Nr. 3: Fidelity and Functionality of Mock-ups  
 - **Main Tasks:** Use Figma or a similar tool to create detailed mock-ups of your solution. These should visually communicate the design and functionality of your concept, including user interface and user experience aspects.
 
-#### Week 10: Prototype Development Completion and Submission 
+#### Nr. 4: Prototype Development Completion and Submission 
 - **Main Tasks:** Develop a working prototype that brings your mock-ups to life. Ensure that the prototype is functional and demonstrates the key features of your solution. Prepare a video demonstration or an interactive link to showcase your prototype.
 
-#### Week 12: Documentation Draft 
+#### Nr. 5: Documentation Draft 
 - **Main Tasks:** Draft your project documentation using the Design Science Research Method. Include sections on problem identification, methodology, prototype development, and initial evaluations. Highlight how your project applies design thinking principles.
 
-#### Week 14: Final Documentation and Prototype 
+#### Nr. 6: Final Documentation and Prototype 
 - **Main Tasks:** Finalize your project documentation, incorporating feedback received on your draft. Ensure that all sections are comprehensive and reflective of your project's development process. Submit the final version of your prototype, ready for presentation.
 
-#### Week 15: Final Presentation 
+#### Nr. 7: Final Presentation 
 - **Main Tasks:** Present your project to the class, focusing on the problem identified, your design process, prototype development, and the potential impact of your solution. Be prepared to answer questions and discuss your project in depth.
