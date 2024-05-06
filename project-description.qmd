@@ -9,9 +9,9 @@ title: "Project"
 | Week | Date       | Milestone                                            | Description                                                                                       |
 |------|------------|------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | 4    | 15.04      | Understanding and Empathy Assignment Due             | Submission of problem identification, user personas, and jobs to be done analysis                 |
-| 6    | 07.05      | Ideation and Prototype Planning Assignment Due       | Submission of ideas and selected concept for prototyping, including justifications                |
-| 8    | 13.05      | Fidelity and Functionality of Mock-ups Due           | Submission of detailed mock-ups using tools like Figma                                            |
-| 10   | 27.05      | Prototype Development Completion and Submission      | Hand in developed prototypes with a video demonstration or interactive link                       |
+| 6    | 14.05      | Ideation and Prototype Planning Assignment Due       | Submission of ideas and selected concept for prototyping, including justifications                |
+| 8    | 28.05      | Fidelity and Functionality of Mock-ups Due           | Submission of detailed mock-ups using tools like Figma                                            |
+| 10   | 10.06      | Prototype Development Completion and Submission      | Hand in developed prototypes with a video demonstration or interactive link                       |
 | 12   | 10.06      | Documentation Draft Due                              | Initial draft of project documentation using the Design Science Research Method for feedback      |
 | 14   | 24.06      | Final Documentation and Prototype Due                | Submission of complete project documentation, incorporating any revisions, and final prototype    |
 | 15   | 01.07      | Final Presentation                                   | Students present their final projects showcasing their prototypes and development journey        |
