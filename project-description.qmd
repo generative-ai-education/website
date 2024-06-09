@@ -11,11 +11,8 @@ title: "Project"
 | 1    | 15.04      | Understanding and Empathy Assignment Due             | Submission of problem identification, user personas, and jobs to be done analysis                 |
 | 2    | 14.05      | Ideation and Prototype Planning Assignment Due       | Submission of ideas and selected concept for prototyping, including justifications                |
 | 3    | 28.05      | Fidelity and Functionality of Mock-ups Due           | Submission of detailed mock-ups using tools like Figma                                            |
-| 4   | 26.06      | Prototype Development Completion and Submission      | Hand in developed prototypes with a video demonstration or interactive link                       |
-| 5   | *26.06*      | Documentation Draft (optional) Due                              | Initial draft of project documentation using the Design Science Research Method for feedback      |
-| 6   | tbd      | Final Documentation and Prototype Due                | Submission of complete project documentation, incorporating any revisions, and final prototype    |
-| 7   | tbd      | Final Presentation                                   | Students present their final projects showcasing their prototypes and development journey        |
-
+| 4   | tbd      | Final Documentation and Prototype Due                | Submission of prototype and  project documentation   |
+| 5   | tbd      | Final Presentation                                   | Students present their final projects showcasing their prototypes and development journey        |
 
 
 
@@ -25,7 +22,6 @@ title: "Project"
 
 - **Main Tasks:** Identify the educational challenge your project will address. Create detailed user personas and conduct a jobs to be done analysis to understand the needs and motivations of your target users. Document your findings clearly.
 
-
 #### Nr. 2: Ideation and Prototype Planning Assignment 
 
 - **Main Tasks:** Generate a wide range of ideas to address the identified challenge. Select the most promising concept based on criteria like feasibility, impact, and innovation. Outline your prototype planning, including the scope and key features of your selected concept.
@@ -33,14 +29,8 @@ title: "Project"
 #### Nr. 3: Fidelity and Functionality of Mock-ups  
 - **Main Tasks:** Use Figma or a similar tool to create detailed mock-ups of your solution. These should visually communicate the design and functionality of your concept, including user interface and user experience aspects.
 
-#### Nr. 4: Prototype Development Completion and Submission 
-- **Main Tasks:** Develop a working prototype that brings your mock-ups to life. Ensure that the prototype is functional and demonstrates the key features of your solution. Prepare a video demonstration or an interactive link to showcase your prototype.
+#### Nr. 4: Final Documentation and Prototype 
+- **Main Tasks:** Develop a working prototype that brings your mock-ups to life. Ensure that the prototype is functional and demonstrates the key features of your solution. Prepare a video demonstration or an interactive link to showcase your prototype. Hand in your project documentation. Ensure that all sections are comprehensive and reflective of your project's development process. 
 
-#### Nr. 5: Documentation Draft 
-- **Main Tasks:** Draft your project documentation using the Design Science Research Method. Include sections on problem identification, methodology, prototype development, and initial evaluations. Highlight how your project applies design thinking principles.
-
-#### Nr. 6: Final Documentation and Prototype 
-- **Main Tasks:** Finalize your project documentation, incorporating feedback received on your draft. Ensure that all sections are comprehensive and reflective of your project's development process. Submit the final version of your prototype, ready for presentation.
-
-#### Nr. 7: Final Presentation 
+#### Nr. 5: Final Presentation 
 - **Main Tasks:** Present your project to the class, focusing on the problem identified, your design process, prototype development, and the potential impact of your solution. Be prepared to answer questions and discuss your project in depth.
