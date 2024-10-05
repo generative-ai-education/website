@@ -2,4 +2,8 @@
 title: "Project tips + resources"
 ---
 
-tbd
+- [Prompt Library (Ethan Mollick)](https://www.moreusefulthings.com/prompts)
+
+- [One Useful Thing](https://www.oneusefulthing.org/)
+
+- [OpenAI, Teaching with AI](https://openai.com/blog/teaching-with-ai)
