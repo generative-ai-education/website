@@ -60,7 +60,7 @@ website:
           - href: projekt-ressourcen.qmd
             text: Ressourcen
 
-      - section: "Konzept"
+      - section: "Projektkonzept"
         contents:
           - href: docs/business-model-canvas.qmd
             text: Business Model Canvas
