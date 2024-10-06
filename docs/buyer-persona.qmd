@@ -1,6 +1,6 @@
 ---
 title: "Buyer Persona"
-number-sections: false
+number-sections: true
 ---
 
 ## Definition
