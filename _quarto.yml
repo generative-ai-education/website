@@ -53,8 +53,6 @@ website:
         contents:
           - href: course-syllabus.qmd
             text: Syllabus
-          - href: course-support.qmd
-            text: Support
           - href: index.qmd
             text: Schedule
 
@@ -64,12 +62,20 @@ website:
             text: Description
           - href: project-tips-resources.qmd
             text: Tips + resources
+          - href: project-tips-resources.qmd
+            text: Tips + resources
 
-      - section: "Programming"
+      - section: "Konzept"
         contents:
-          - href: programming-requirements.qmd
-            text: Requirements
-          - href: anaconda-environment.qmd
+          - href: docs/business-model-canvas.qmd
+            text: Business Model Canvas
+          - href: docs/value-proposition.qmd
+            text: Value Proposition Canvas
+          - href: docs/jobs-to-be-done.qmd
+            text: Jobs to be Done
+          - href: docs/user-persona.qmd
+            text: User Persona
+
 
 format:
   html:
