@@ -1,0 +1,27 @@
+---
+title: "Project tips + resources"
+---
+
+## Prompting
+
+- [Prompt Library (Ethan Mollick)](https://www.moreusefulthings.com/prompts)
+
+- [One Useful Thing](https://www.oneusefulthing.org/)
+
+
+## Teaching & Learning with AI
+
+- [Research and Tools on AI and Education, Wharton](https://ai-analytics.wharton.upenn.edu/generative-ai-labs/ai-and-education/)
+
+- [UX Beispiel Kahnmigo](https://www.youtube.com/watch?v=rnIgnS8Susg)
+
+- [OpenAI, Teaching with AI](https://openai.com/blog/teaching-with-ai)
+
+
+## Design Thinking
+
+- [Design Thinking 101](https://www.nngroup.com/articles/design-thinking/)
+
+- [Design Thinking 101 (poster)](https://media.nngroup.com/media/articles/attachments/Design-thinking-101-NNG.pdf)
+
+![](https://media.nngroup.com/media/editor/2016/07/25/designthinking_illustration_final2-02.png)
