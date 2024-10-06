@@ -10,3 +10,4 @@ Generative AI has the potential to fundamentally change the way we teach and lea
 The main goal of this project is to explore the potential of generative Artificial Intelligence (AI) in the field of teaching and learning.
 
 This involves investigating how generative AI can be used meaningfully and effectively for the development of new and innovative pedagogical approaches and formats. The focus is on exploring the possibilities of how generative AI can enrich and transform the educational landscape. This is done through research and working with prototypes.
+
