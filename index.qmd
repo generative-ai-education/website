@@ -1,10 +1,11 @@
 ---
-title: "Generative AI in Education"
-subtitle: "Course Schedule"
+title: "Generative KI in der Bildung"
+subtitle: "Willkommen"
 ---
 
-This page contains an outline of the topics, content, and assignments for the semester.
+herzlich willkommen zu dem Projekt "Generative KI in den Bereichen Lehre und Lernen" 👋.   
+
 
 :::{.callout-note}
-Note that this schedule will be updated as the semester progresses and the timeline of topics and assignments might be updated throughout the semester.
+In diesem Online-Buch finden Sie Hinweise zu dem Kurs
 :::
