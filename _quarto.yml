@@ -48,17 +48,12 @@ website:
     contents:
       - section: "Kurs-Hinweise"
         contents:
-          - href: kurs-syllabus.qmd
-            text: Syllabus
           - href: index.qmd
             text: Willkommen
-
-      - section: "Projekt"
-        contents:
-          - href: projekt-beschreibung.qmd
-            text: Beschreibung
+          - href: kurs-syllabus.qmd
+            text: Syllabus
           - href: projekt-ressourcen.qmd
-            text: Ressourcen
+            text: Ressourcen            
 
       - section: "Projektkonzept"
         contents:
