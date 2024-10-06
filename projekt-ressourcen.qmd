@@ -1,21 +1,31 @@
 ---
-title: "Project tips + resources"
+title: "Ressourcen"
 ---
 
-## Prompting
+## Lese-Empfehlungen
 
-- [Prompt Library (Ethan Mollick)](https://www.moreusefulthings.com/prompts)
+- Mollick, T. (2024). Co-Intelligence: Living and Working with AI. Portfolio. [HdM-Bibliothek](https://bsz.ibs-bw.de/aDISWeb/app;jsessionid=60CD3E70329581E53CB209DF2BAC9FE3)
 
-- [One Useful Thing](https://www.oneusefulthing.org/)
+- [Mollick, E., Mollick, L., Bach, N., Ciccarelli, L. J., Przystanski, B., & Ravipinto, D. (2024). AI Agents and Education: Simulated Practice at Scale. Working Paper](https://arxiv.org/abs/2407.12796)
+
+- [Mollick, E., Mollick, L. (2024). How to Use AI to Create Role-Play Scenarios for Your Students. Harvard Business Publishing.](https://hbsp.harvard.edu/inspiring-minds/using-generative-ai-to-create-role-play-scenarios-for-students)
+
+- [Mollick, E., Mollick, L. (2024) Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper.](https://arxiv.org/abs/2407.05181)
+
+- [Ethan Mollick's Blog: One Useful Thing](https://www.oneusefulthing.org/)
+
+- [OpenAI: Teaching with AI](https://openai.com/blog/teaching-with-ai)
 
 
 ## Teaching & Learning with AI
 
+- [🎥 Mollick, E., Mollick, L. (2024). Practical AI for Instructors and Students Part 1: Introduction to AI for Teachers and Students](https://www.youtube.com/watch?v=t9gmyvf7JYo&t=1s)
+
 - [Research and Tools on AI and Education, Wharton](https://ai-analytics.wharton.upenn.edu/generative-ai-labs/ai-and-education/)
 
-- [UX Beispiel Kahnmigo](https://www.youtube.com/watch?v=rnIgnS8Susg)
+- [Prompt Library (Ethan Mollick)](https://www.moreusefulthings.com/prompts)
 
-- [OpenAI, Teaching with AI](https://openai.com/blog/teaching-with-ai)
+- [Kahnacademy: Kahnmigo](https://www.youtube.com/watch?v=rnIgnS8Susg)
 
 
 ## Design Thinking
