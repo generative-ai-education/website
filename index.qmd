@@ -3,9 +3,9 @@ title: "Generative KI in der Bildung"
 subtitle: "Willkommen"
 ---
 
-herzlich willkommen zu dem Projekt "Generative KI in den Bereichen Lehre und Lernen" 👋.   
+Herzlich willkommen zu dem Projekt "Generative KI in den Bereichen Lehre und Lernen" 👋.   
 
 
 :::{.callout-note}
-In diesem Online-Buch finden Sie Hinweise zu dem Kurs
+In diesem Online-Buch finden Sie Hinweise zu unserem Kurs
 :::
