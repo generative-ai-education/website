@@ -38,6 +38,7 @@ Am Ende dieses Kurses werden die Studierenden in der Lage sein:
 | Visuelle und technische Qualität                       | 05      |
 | **Gesamt**                                              | **100** |
 
+
 ### Projektkonzept 
 
 *Für diese Aufgabe benötigen Sie [Miro](https://miro.com/de/) (ein Account wird bereitgestellt).*
@@ -46,18 +47,21 @@ Am Ende dieses Kurses werden die Studierenden in der Lage sein:
 
 2. Machen Sie sich zunächst mit dem [Business Model Canvas (BMC)](/docs/business-model-canvas.qmd) vertraut. Darauf aufbauend kann die Thematik [Value Proposition Canvas (VPC)](/docs/value-proposition.qmd) in Verbindung mit dem [Jobs to be Done (JTBD)](/docs/jobs-to-be-done.qmd) Ansatz bearbeitet werden. Auf Grundlage dieser Ansätze kann eine [User Persona](/docs/user-persona.qmd) abgeleitet werden. Im Rahmen dieser Aufgabe sollen die folgenden Inhalte in Miro erstellt werden:
 
-  - [Customer Value Proposition Map](https://miro.com/miroverse/customer-value-proposition-map/)
-  - [Business Model Canvas](https://miro.com/de/templates/business-model-canvas/)
-  - [User-Persona](https://miro.com/templates/personas/)
+   - [Customer Value Proposition Map](https://miro.com/miroverse/customer-value-proposition-map/)
+   - [Business Model Canvas](https://miro.com/de/templates/business-model-canvas/)
+   - [User-Persona](https://miro.com/templates/personas/)
 
 3. Verwenden Sie die in Aufgabe 2 erarbeiteten Inhalte um [diese Vorlage](https://docs.google.com/document/d/1JK1IIW0h1MR4P9Z-29VpWISRz62Y7rA1cz8AQDTTqgs/edit?usp=sharing) unter Nutzung des [IDEO Design-Kits](https://www.designkit.org/resources/1.html) auszufüllen. Folgende Inhalte müssen bearbeitet werden:
 
-  - Frame Your Design Challenge (p. 33).
-  - Priorities topics: Card sort (p. 57).
-  - Create Insight Statements (p. 83).
-  - Create How Might We Questions (p. 87).
-  - Create Frameworks (p. 90-93).
-  - Create a Storyboard (114).
+   - Frame Your Design Challenge (p. 33).
+   - Priorities topics: Card sort (p. 57).
+   - Create Insight Statements (p. 83).
+   - Create How Might We Questions (p. 87).
+   - Create Frameworks (p. 90-93).
+   - Create a Storyboard (114).
+
+
+
 
 ### Mock-up und Prototyping
 
