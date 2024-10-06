@@ -6,8 +6,8 @@ execute:
 
 website:
   page-navigation: true
-  title: "Generative AI in Education"
-  description: "Homepage for Generatibve AI project at HdM Stuttgart, SS 2024."
+  title: "Generative KI in der Bildung"
+  description: "Webseite für den Kurs Generative KI in der Bildung an HdM Stuttgart, WS 24/25."
   site-url: "https://generative-ai-education.github.io/website/"
   repo-url: https://github.com/generative-ai-education/website
   repo-actions: [edit, issue]
@@ -20,14 +20,14 @@ website:
     left: |
       © [Jan Kirenz](https://www.kirenz.com/), 2024
     center:
-      - text: "Schedule"
+      - text: "Willkommen"
         href: index.qmd
       - text: "Syllabus"
-        href: course-syllabus.qmd  
+        href: kurs-syllabus.qmd  
     right:
       - icon: person-circle
       - text: "Moodle"
-        href: https://moodle.hdm-stuttgart.de/login/index.php
+        href: https://moodle.hdm-stuttgart.de/course/view.php?id=20559
         aria-label: Moodle    
 #    background: "#325b74"    
 
@@ -38,32 +38,27 @@ website:
     pinned: true
     align: center
     tools:
-      - icon: github
-        href: https://github.com/myplaceholder
-        text: "GitHub organization"
       - icon: person-fill
         text: "Moodle"
-        href: https://moodle.hdm-stuttgart.de/login/index.php
+        href: https://moodle.hdm-stuttgart.de/course/view.php?id=20559
 
     style: docked
     search: true
     collapse-level: 1
     contents:
-      - section: "Course information"
+      - section: "Kurs-Hinweise"
         contents:
-          - href: course-syllabus.qmd
+          - href: kurs-syllabus.qmd
             text: Syllabus
           - href: index.qmd
-            text: Schedule
+            text: Willkommen
 
-      - section: "Project"
+      - section: "Projekt"
         contents:
-          - href: project-description.qmd
-            text: Description
-          - href: project-tips-resources.qmd
-            text: Tips + resources
-          - href: project-tips-resources.qmd
-            text: Tips + resources
+          - href: projekt-beschreibung.qmd
+            text: Beschreibung
+          - href: projekt-ressourcen.qmd
+            text: Ressourcen
 
       - section: "Konzept"
         contents:
@@ -80,9 +75,10 @@ website:
 format:
   html:
     toc: true
-    theme:
-      light: [cosmo, style/course.scss]
-      dark: [cosmo, style/course.scss, style/dark.scss]
-    mainfont: "Atkinson Hyperlegible"
+    theme: cosmo
+    css: theme.scss
     code-copy: true
+    highlight-style: github-dark
     code-overflow: wrap
+    author-meta: "Jan Kirenz"
+    callout-appearance: simple
