@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jan Kirenz">
 
-<title>Buyer Persona – Generative AI in Education</title>
+<title>Buyer Persona – Generative KI in der Bildung</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,12 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -69,10 +68,11 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Buyer Persona – Generative AI in Education">
-<meta property="og:description" content="Homepage for Generatibve AI project at HdM Stuttgart, SS 2024.">
+<link rel="stylesheet" href="../theme.scss">
+<meta property="og:title" content="Buyer Persona – Generative KI in der Bildung">
+<meta property="og:description" content="Webseite für den Kurs Generative KI in der Bildung an HdM Stuttgart, WS 24/25.">
 <meta property="og:image" content="https://generative-ai-education.github.io/website//images/logo.png">
-<meta property="og:site_name" content="Generative AI in Education">
+<meta property="og:site_name" content="Generative KI in der Bildung">
 <meta property="og:image:height" content="425">
 <meta property="og:image:width" content="425">
 </head>
@@ -103,10 +103,8 @@ ul.task-list li input[type="checkbox"] {
       <a href="../index.html" class="sidebar-logo-link">
       <img src="../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
-      <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/myplaceholder" title="GitHub organization" class="quarto-navigation-tool px-1" aria-label="GitHub organization"><i class="bi bi-github"></i></a>
-    <a href="https://moodle.hdm-stuttgart.de/login/index.php" title="Moodle" class="quarto-navigation-tool px-1" aria-label="Moodle"><i class="bi bi-person-fill"></i></a>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+      <div class="sidebar-tools-main">
+    <a href="https://moodle.hdm-stuttgart.de/course/view.php?id=20559" title="Moodle" class="quarto-navigation-tool px-1" aria-label="Moodle"><i class="bi bi-person-fill"></i></a>
 </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -119,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
- <span class="menu-text">Course information</span></a>
+ <span class="menu-text">Kurs-Hinweise</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -127,14 +125,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../course-syllabus.html" class="sidebar-item-text sidebar-link">
+  <a href="../kurs-syllabus.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Syllabus</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schedule</span></a>
+ <span class="menu-text">Willkommen</span></a>
   </div>
 </li>
       </ul>
@@ -142,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
- <span class="menu-text">Project</span></a>
+ <span class="menu-text">Projekt</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -150,20 +148,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../project-description.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Description</span></a>
+  <a href="../projekt-beschreibung.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Beschreibung</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../project-tips-resources.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tips + resources</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../project-tips-resources.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tips + resources</span></a>
+  <a href="../projekt-ressourcen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ressourcen</span></a>
   </div>
 </li>
       </ul>
@@ -213,16 +205,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#definition" id="toc-definition" class="nav-link active" data-scroll-target="#definition">Definition</a></li>
-  <li><a href="#unterschied-zu-zielgruppen" id="toc-unterschied-zu-zielgruppen" class="nav-link" data-scroll-target="#unterschied-zu-zielgruppen">Unterschied zu Zielgruppen</a></li>
-  <li><a href="#unterschied-zu-user-personas" id="toc-unterschied-zu-user-personas" class="nav-link" data-scroll-target="#unterschied-zu-user-personas">Unterschied zu User Personas</a></li>
-  <li><a href="#integration-des-jobs-to-be-done-ansatzes" id="toc-integration-des-jobs-to-be-done-ansatzes" class="nav-link" data-scroll-target="#integration-des-jobs-to-be-done-ansatzes">Integration des Jobs-to-be-Done-Ansatzes</a></li>
-  <li><a href="#erstellung-von-buyer-personas-mit-jtbd" id="toc-erstellung-von-buyer-personas-mit-jtbd" class="nav-link" data-scroll-target="#erstellung-von-buyer-personas-mit-jtbd">Erstellung von Buyer Personas mit JTBD</a></li>
-  <li><a href="#schlüsselelemente-einer-buyer-persona" id="toc-schlüsselelemente-einer-buyer-persona" class="nav-link" data-scroll-target="#schlüsselelemente-einer-buyer-persona">Schlüsselelemente einer Buyer Persona</a></li>
-  <li><a href="#anwendungsbereiche" id="toc-anwendungsbereiche" class="nav-link" data-scroll-target="#anwendungsbereiche">Anwendungsbereiche</a></li>
-  <li><a href="#vorteile" id="toc-vorteile" class="nav-link" data-scroll-target="#vorteile">Vorteile</a></li>
-  <li><a href="#ressourcen" id="toc-ressourcen" class="nav-link" data-scroll-target="#ressourcen">Ressourcen</a></li>
-  <li><a href="#nächste-schritte" id="toc-nächste-schritte" class="nav-link" data-scroll-target="#nächste-schritte">Nächste Schritte</a></li>
+  <li><a href="#definition" id="toc-definition" class="nav-link active" data-scroll-target="#definition"><span class="header-section-number">1</span> Definition</a></li>
+  <li><a href="#unterschied-zu-zielgruppen" id="toc-unterschied-zu-zielgruppen" class="nav-link" data-scroll-target="#unterschied-zu-zielgruppen"><span class="header-section-number">2</span> Unterschied zu Zielgruppen</a></li>
+  <li><a href="#unterschied-zu-user-personas" id="toc-unterschied-zu-user-personas" class="nav-link" data-scroll-target="#unterschied-zu-user-personas"><span class="header-section-number">3</span> Unterschied zu User Personas</a></li>
+  <li><a href="#integration-des-jobs-to-be-done-ansatzes" id="toc-integration-des-jobs-to-be-done-ansatzes" class="nav-link" data-scroll-target="#integration-des-jobs-to-be-done-ansatzes"><span class="header-section-number">4</span> Integration des Jobs-to-be-Done-Ansatzes</a></li>
+  <li><a href="#erstellung-von-buyer-personas-mit-jtbd" id="toc-erstellung-von-buyer-personas-mit-jtbd" class="nav-link" data-scroll-target="#erstellung-von-buyer-personas-mit-jtbd"><span class="header-section-number">5</span> Erstellung von Buyer Personas mit JTBD</a></li>
+  <li><a href="#schlüsselelemente-einer-buyer-persona" id="toc-schlüsselelemente-einer-buyer-persona" class="nav-link" data-scroll-target="#schlüsselelemente-einer-buyer-persona"><span class="header-section-number">6</span> Schlüsselelemente einer Buyer Persona</a></li>
+  <li><a href="#anwendungsbereiche" id="toc-anwendungsbereiche" class="nav-link" data-scroll-target="#anwendungsbereiche"><span class="header-section-number">7</span> Anwendungsbereiche</a></li>
+  <li><a href="#vorteile" id="toc-vorteile" class="nav-link" data-scroll-target="#vorteile"><span class="header-section-number">8</span> Vorteile</a></li>
+  <li><a href="#ressourcen" id="toc-ressourcen" class="nav-link" data-scroll-target="#ressourcen"><span class="header-section-number">9</span> Ressourcen</a></li>
+  <li><a href="#nächste-schritte" id="toc-nächste-schritte" class="nav-link" data-scroll-target="#nächste-schritte"><span class="header-section-number">10</span> Nächste Schritte</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/generative-ai-education/website/edit/main/docs/buyer-persona.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/generative-ai-education/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -248,31 +240,31 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="definition" class="level2">
-<h2 class="anchored" data-anchor-id="definition">Definition</h2>
+<section id="definition" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="definition"><span class="header-section-number">1</span> Definition</h2>
 <p>Eine <strong>Buyer Persona</strong> ist eine semi-fiktive Darstellung des idealen Kunden, basierend auf Marktforschung und realen Daten über bestehende Kunden.</p>
 </section>
-<section id="unterschied-zu-zielgruppen" class="level2">
-<h2 class="anchored" data-anchor-id="unterschied-zu-zielgruppen">Unterschied zu Zielgruppen</h2>
+<section id="unterschied-zu-zielgruppen" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="unterschied-zu-zielgruppen"><span class="header-section-number">2</span> Unterschied zu Zielgruppen</h2>
 <ul>
 <li><p>Zielgruppen sind breiter und weniger detailliert als Buyer Personas.</p></li>
 <li><p>Zielgruppen basieren auf demografischen Merkmalen, während Buyer Personas tiefergehende Informationen beinhalten.</p></li>
 </ul>
 </section>
-<section id="unterschied-zu-user-personas" class="level2">
-<h2 class="anchored" data-anchor-id="unterschied-zu-user-personas">Unterschied zu User Personas</h2>
+<section id="unterschied-zu-user-personas" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="unterschied-zu-user-personas"><span class="header-section-number">3</span> Unterschied zu User Personas</h2>
 <ul>
 <li><p><a href="docs/user-personas.qmd">User Personas</a> repräsentieren Nutzer eines Produkts oder Services, fokussieren auf Nutzerverhalten und -erfahrungen.</p></li>
 <li><p>Buyer Personas sind für Marketing und Vertrieb relevant, während User Personas für Produktentwicklung und Design genutzt werden.</p></li>
 </ul>
 <p>Während beide Personas ähnliche Konzepte sind, unterscheiden sie sich in ihrem Fokus. Eine Buyer Persona konzentriert sich auf die Merkmale und Verhaltensweisen des Käufers, einschließlich demografischer Daten, um ein besseres Verständnis für Marketing und Vertrieb zu schaffen. Im Gegensatz dazu richtet sich eine User Persona auf die Erfahrungen und Bedürfnisse der tatsächlichen Nutzer eines Produkts oder Dienstes, um dessen Benutzerfreundlichkeit zu optimieren. Bei Vertriebssoftware beispielsweise adressiert die Buyer Persona den Vertriebsleiter oder Geschäftsinhaber als Käufer, während die User Persona den Vertriebsmitarbeiter als Endnutzer fokussiert.</p>
 </section>
-<section id="integration-des-jobs-to-be-done-ansatzes" class="level2">
-<h2 class="anchored" data-anchor-id="integration-des-jobs-to-be-done-ansatzes">Integration des Jobs-to-be-Done-Ansatzes</h2>
+<section id="integration-des-jobs-to-be-done-ansatzes" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="integration-des-jobs-to-be-done-ansatzes"><span class="header-section-number">4</span> Integration des Jobs-to-be-Done-Ansatzes</h2>
 <p>Der <a href="../jobs-to-be-done.qmd">JTBD-Ansatz</a> kann in Buyer Personas integriert werden, indem er sich auf die spezifischen Aufgaben konzentriert, die Käufer/innen erledigen möchten, und bietet tiefere Einblicke in ihre wahren Bedürfnisse und Ziele.</p>
 </section>
-<section id="erstellung-von-buyer-personas-mit-jtbd" class="level2">
-<h2 class="anchored" data-anchor-id="erstellung-von-buyer-personas-mit-jtbd">Erstellung von Buyer Personas mit JTBD</h2>
+<section id="erstellung-von-buyer-personas-mit-jtbd" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="erstellung-von-buyer-personas-mit-jtbd"><span class="header-section-number">5</span> Erstellung von Buyer Personas mit JTBD</h2>
 <ol type="1">
 <li><strong>Recherche</strong>: Um genaue Personas zu erstellen, werden Umfragen, Interviews und Datenanalysen genutzt, um demografische Daten, Vorlieben, Verhalten und Motivationen zu sammeln.</li>
 <li><strong>Ermittlung der ‘Jobs’</strong>: Zusätzlich zu demografischen und psychografischen Daten werden die spezifischen ‘Jobs’ erfasst, die Käufer*innen mit dem Produkt oder der Dienstleistung erledigen wollen (dabei sollten funktionale, emotionale und soziale Nutzenkomponenten berücksichtigt werden).</li>
@@ -280,8 +272,8 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Fokus auf Lösungen</strong>: Marketingbotschaften werden so gestaltet, dass sie genau auf die ‘Jobs’ zugeschnitten sind, die Käufer*innen erledigen möchten.</li>
 </ol>
 </section>
-<section id="schlüsselelemente-einer-buyer-persona" class="level2">
-<h2 class="anchored" data-anchor-id="schlüsselelemente-einer-buyer-persona">Schlüsselelemente einer Buyer Persona</h2>
+<section id="schlüsselelemente-einer-buyer-persona" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="schlüsselelemente-einer-buyer-persona"><span class="header-section-number">6</span> Schlüsselelemente einer Buyer Persona</h2>
 <ol type="1">
 <li><strong>Hintergrund:</strong> Beruf, Karriereweg, Familiensituation.</li>
 <li><strong>Demografische Daten:</strong> Geschlecht, Alter, Einkommen, Wohnort.</li>
@@ -292,16 +284,16 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Marketing-Botschaft:</strong> Positionierung der Marke oder des Produkts.</li>
 </ol>
 </section>
-<section id="anwendungsbereiche" class="level2">
-<h2 class="anchored" data-anchor-id="anwendungsbereiche">Anwendungsbereiche</h2>
+<section id="anwendungsbereiche" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="anwendungsbereiche"><span class="header-section-number">7</span> Anwendungsbereiche</h2>
 <ul>
 <li><p><strong>Marketing:</strong> Erstellung zielgerichteter Kampagnen.</p></li>
 <li><p><strong>Vertrieb:</strong> Besseres Verständnis der Kundenbedürfnisse.</p></li>
 <li><p><strong>Produktentwicklung:</strong> Anpassung an spezifische Kundenanforderungen.</p></li>
 </ul>
 </section>
-<section id="vorteile" class="level2">
-<h2 class="anchored" data-anchor-id="vorteile">Vorteile</h2>
+<section id="vorteile" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="vorteile"><span class="header-section-number">8</span> Vorteile</h2>
 <ul>
 <li>Verbessertes Verständnis der Kunden.</li>
 <li>Effektiveres und zielgerichtetes Marketing.</li>
@@ -309,16 +301,16 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Im Marketing helfen Buyer-Personas den Marketingteams, ihre Marketingaktivitäten gezielt einzusetzen. Mithilfe von Buyer Personas weiß das Marketingteam, welche Art von Inhalten bei seiner Zielgruppe Anklang findet. So können sie sicherstellen, dass alle veröffentlichten Inhalte auf das abgestimmt sind, was die Kunden tatsächlich interessiert.</p>
 </section>
-<section id="ressourcen" class="level2">
-<h2 class="anchored" data-anchor-id="ressourcen">Ressourcen</h2>
+<section id="ressourcen" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="ressourcen"><span class="header-section-number">9</span> Ressourcen</h2>
 <ul>
 <li><p><a href="https://miro.com/de/templates/buyer-persona/">Miro Buyer Persona-Template</a></p></li>
 <li><p><a href="https://docs.google.com/presentation/d/1dEyL_jVAl2meREQHJdn38u8PJD-26G7gjFbWXT0Abco/edit?usp=sharing">PPT-Template für die Erstellung von Buyer Personas</a></p></li>
 <li><p><a href="https://www.hubspot.de/make-my-persona">Buyer Persona Tool von HubSpot</a></p></li>
 </ul>
 </section>
-<section id="nächste-schritte" class="level2">
-<h2 class="anchored" data-anchor-id="nächste-schritte">Nächste Schritte</h2>
+<section id="nächste-schritte" class="level2" data-number="10">
+<h2 data-number="10" class="anchored" data-anchor-id="nächste-schritte"><span class="header-section-number">10</span> Nächste Schritte</h2>
 <p>Nachdem die Persona erstellt wurde, können die Bedürfnisse dieser Persona mit der Wertkarte (Value Map) eines Unternehmens mit Hilfe des <a href="../docs/value-proposition.html">Value Proposition Canvas</a> abgeglichen werden.</p>
 
 
@@ -345,150 +337,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const disableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'prefetch';
-    }
-  }
-  const enableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'stylesheet';
-    }
-  }
-  const manageTransitions = (selector, allowTransitions) => {
-    const els = window.document.querySelectorAll(selector);
-    for (let i=0; i < els.length; i++) {
-      const el = els[i];
-      if (allowTransitions) {
-        el.classList.remove('notransition');
-      } else {
-        el.classList.add('notransition');
-      }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
-    }
-  }
-  const toggleColorMode = (alternate) => {
-    // Switch the stylesheets
-    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-    manageTransitions('#quarto-margin-sidebar .nav-link', false);
-    if (alternate) {
-      enableStylesheet(alternateStylesheets);
-      for (const sheetNode of alternateStylesheets) {
-        if (sheetNode.id === "quarto-bootstrap") {
-          toggleBodyColorMode(sheetNode);
-        }
-      }
-    } else {
-      disableStylesheet(alternateStylesheets);
-      toggleBodyColorPrimary();
-    }
-    manageTransitions('#quarto-margin-sidebar .nav-link', true);
-    // Switch the toggles
-    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-    for (let i=0; i < toggles.length; i++) {
-      const toggle = toggles[i];
-      if (toggle) {
-        if (alternate) {
-          toggle.classList.add("alternate");     
-        } else {
-          toggle.classList.remove("alternate");
-        }
-      }
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455)
-    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-      manageTransitions("body", false);
-      window.scrollTo(0, 1);
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-        manageTransitions("body", true);
-      }, 40);  
-    }
-  }
-  const isFileUrl = () => { 
-    return window.location.protocol === 'file:';
-  }
-  const hasAlternateSentinel = () => {  
-    let styleSentinel = getColorSchemeSentinel();
-    if (styleSentinel !== null) {
-      return styleSentinel === "alternate";
-    } else {
-      return false;
-    }
-  }
-  const setStyleSentinel = (alternate) => {
-    const value = alternate ? "alternate" : "default";
-    if (!isFileUrl()) {
-      window.localStorage.setItem("quarto-color-scheme", value);
-    } else {
-      localAlternateSentinel = value;
-    }
-  }
-  const getColorSchemeSentinel = () => {
-    if (!isFileUrl()) {
-      const storageValue = window.localStorage.getItem("quarto-color-scheme");
-      return storageValue != null ? storageValue : localAlternateSentinel;
-    } else {
-      return localAlternateSentinel;
-    }
-  }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-  // Dark / light mode switch
-  window.quartoToggleColorScheme = () => {
-    // Read the current dark / light value 
-    let toAlternate = !hasAlternateSentinel();
-    toggleColorMode(toAlternate);
-    setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
-  };
-  // Ensure there is a toggle, if there isn't float one in the top right
-  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-    const a = window.document.createElement('a');
-    a.classList.add('top-right');
-    a.classList.add('quarto-color-scheme-toggle');
-    a.href = "";
-    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-    const i = window.document.createElement("i");
-    i.classList.add('bi');
-    a.appendChild(i);
-    window.document.body.appendChild(a);
-  }
-  // Switch to dark mode if need be
-  if (hasAlternateSentinel()) {
-    toggleColorMode(true);
-  } else {
-    toggleColorMode(false);
-  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -899,11 +747,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
     <a class="nav-link active" href="../index.html" aria-current="page">
-<p>Schedule</p>
+<p>Willkommen</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="../course-syllabus.html">
+    <a class="nav-link" href="../kurs-syllabus.html">
 <p>Syllabus</p>
 </a>
   </li>  
@@ -916,7 +764,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </i> 
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="https://moodle.hdm-stuttgart.de/login/index.php">
+    <a class="nav-link" href="https://moodle.hdm-stuttgart.de/course/view.php?id=20559">
 <p>Moodle</p>
 </a>
   </li>  

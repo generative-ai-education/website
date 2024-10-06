@@ -8,7 +8,7 @@
 
 <meta name="author" content="Jan Kirenz">
 
-<title>Requirements – Generative KI in der Bildung</title>
+<title>Project tips + resources – Generative KI in der Bildung</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./docs/business-model-canvas.html" rel="next">
+<link href="./projekt-beschreibung.html" rel="prev">
 <link href=".//images/logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -69,8 +71,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="theme.scss">
-<meta property="og:title" content="Requirements – Generative KI in der Bildung">
-<meta property="og:description" content="Webseite für den Kurs Generative KI in der Bildung an HdM Stuttgart, WS 24/25.">
+<meta property="og:title" content="Project tips + resources – Generative KI in der Bildung">
 <meta property="og:image" content="https://generative-ai-education.github.io/website//images/logo.png">
 <meta property="og:site_name" content="Generative KI in der Bildung">
 <meta property="og:image:height" content="425">
@@ -86,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Requirements</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./projekt-beschreibung.html">Projekt</a></li><li class="breadcrumb-item"><a href="./projekt-ressourcen.html">Ressourcen</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -139,13 +140,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Projekt</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./projekt-beschreibung.html" class="sidebar-item-text sidebar-link">
@@ -154,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./projekt-ressourcen.html" class="sidebar-item-text sidebar-link">
+  <a href="./projekt-ressourcen.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Ressourcen</span></a>
   </div>
 </li>
@@ -200,15 +201,23 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#prompting" id="toc-prompting" class="nav-link active" data-scroll-target="#prompting">Prompting</a></li>
+  <li><a href="#teaching-learning-with-ai" id="toc-teaching-learning-with-ai" class="nav-link" data-scroll-target="#teaching-learning-with-ai">Teaching &amp; Learning with AI</a></li>
+  <li><a href="#design-thinking" id="toc-design-thinking" class="nav-link" data-scroll-target="#design-thinking">Design Thinking</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/generative-ai-education/website/edit/main/projekt-ressourcen.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/generative-ai-education/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./projekt-beschreibung.html">Projekt</a></li><li class="breadcrumb-item"><a href="./projekt-ressourcen.html">Ressourcen</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Requirements</h1>
+<h1 class="title">Project tips + resources</h1>
 </div>
 
 
@@ -225,23 +234,31 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>For this course you can use the following setup:</p>
+<section id="prompting" class="level2">
+<h2 class="anchored" data-anchor-id="prompting">Prompting</h2>
 <ul>
-<li><strong>Python</strong>: Anaconda, Anaconda Environment <code>genai</code> and Visual Studio Code</li>
-<li><strong>Environment</strong>: OpenAI API and an environment file with your APIs</li>
+<li><p><a href="https://www.moreusefulthings.com/prompts">Prompt Library (Ethan Mollick)</a></p></li>
+<li><p><a href="https://www.oneusefulthing.org/">One Useful Thing</a></p></li>
 </ul>
-<div class="callout callout-style-simple callout-important">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Visit the “<a href="https://kirenz.github.io/lab-toolkit/">Programming Toolkit-webpage</a>” to learn how to meet all requirements.</p>
-</div>
-</div>
-</div>
+</section>
+<section id="teaching-learning-with-ai" class="level2">
+<h2 class="anchored" data-anchor-id="teaching-learning-with-ai">Teaching &amp; Learning with AI</h2>
+<ul>
+<li><p><a href="https://ai-analytics.wharton.upenn.edu/generative-ai-labs/ai-and-education/">Research and Tools on AI and Education, Wharton</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=rnIgnS8Susg">UX Beispiel Kahnmigo</a></p></li>
+<li><p><a href="https://openai.com/blog/teaching-with-ai">OpenAI, Teaching with AI</a></p></li>
+</ul>
+</section>
+<section id="design-thinking" class="level2">
+<h2 class="anchored" data-anchor-id="design-thinking">Design Thinking</h2>
+<ul>
+<li><p><a href="https://www.nngroup.com/articles/design-thinking/">Design Thinking 101</a></p></li>
+<li><p><a href="https://media.nngroup.com/media/articles/attachments/Design-thinking-101-NNG.pdf">Design Thinking 101 (poster)</a></p></li>
+</ul>
+<p><img src="https://media.nngroup.com/media/editor/2016/07/25/designthinking_illustration_final2-02.png" class="img-fluid"></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -664,6 +681,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./projekt-beschreibung.html" class="pagination-link" aria-label="Beschreibung">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Beschreibung</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./docs/business-model-canvas.html" class="pagination-link" aria-label="Business Model Canvas">
+        <span class="nav-page-text">Business Model Canvas</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -683,7 +712,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/generative-ai-education/website/edit/main/programming-requirements.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/generative-ai-education/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/generative-ai-education/website/edit/main/projekt-ressourcen.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/generative-ai-education/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">

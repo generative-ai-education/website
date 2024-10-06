@@ -166,18 +166,60 @@
     "text": "Anhang\nDer Anhang ist optional. Hier können zusätzliche Materialien aufgeführt werden."
   },
   {
-    "objectID": "course-links.html",
-    "href": "course-links.html",
-    "title": "Useful links",
+    "objectID": "kurs-support.html",
+    "href": "kurs-support.html",
+    "title": "Course support",
     "section": "",
-    "text": "tbd"
+    "text": "If you have a question during lecture, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone."
   },
   {
-    "objectID": "programming-requirements.html",
-    "href": "programming-requirements.html",
-    "title": "Requirements",
+    "objectID": "kurs-support.html#lectures",
+    "href": "kurs-support.html#lectures",
+    "title": "Course support",
     "section": "",
-    "text": "For this course you can use the following setup:\n\nPython: Anaconda, Anaconda Environment genai and Visual Studio Code\nEnvironment: OpenAI API and an environment file with your APIs\n\n\n\n\n\n\n\nImportant\n\n\n\nVisit the “Programming Toolkit-webpage” to learn how to meet all requirements."
+    "text": "If you have a question during lecture, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone."
+  },
+  {
+    "objectID": "kurs-support.html#discussion-forum",
+    "href": "kurs-support.html#discussion-forum",
+    "title": "Course support",
+    "section": "Discussion forum",
+    "text": "Discussion forum\nPrefer to write out your question in detail rather than asking in person? The online discussion forum is the best venue for these! We will use the Moodle forum as the online discussion forum. There is a chance another student has already asked a similar question, so please check the other posts before adding a new question. If you know the answer to a question that is posted, I encourage you to respond!"
+  },
+  {
+    "objectID": "kurs-support.html#email",
+    "href": "kurs-support.html#email",
+    "title": "Course support",
+    "section": "Email",
+    "text": "Email\nPlease refrain from emailing any course content questions (those should go to Moodle), and only use email for questions about personal matters that may not be appropriate for the public course forum. For such matters, you may email me at kirenz@hdm-stuttgart.de.\nIf there is a question that’s not appropriate for the public forum, you are welcome to email me directly. If you email me, please include the name of our course in the subject line."
+  },
+  {
+    "objectID": "kurs-support.html#academic-support",
+    "href": "kurs-support.html#academic-support",
+    "title": "Course support",
+    "section": "Academic support",
+    "text": "Academic support\nThere are times you may need help with the class that is beyond what can be provided by the teaching team. In those instances, I encourage you to visit the Center for Learning and Development: it offers free services to all students."
+  },
+  {
+    "objectID": "code/notebook.html",
+    "href": "code/notebook.html",
+    "title": "Notebook",
+    "section": "",
+    "text": "Load Python libaries and API keys.\n\nimport os\nimport openai\nimport pandas as pd\nimport altair as alt\nfrom dotenv import load_dotenv, find_dotenv\n\n\n_ = load_dotenv(find_dotenv()) # read local .env file\nopenai.api_key  = os.environ['OPENAI_API_KEY']"
+  },
+  {
+    "objectID": "code/notebook.html#setup",
+    "href": "code/notebook.html#setup",
+    "title": "Notebook",
+    "section": "",
+    "text": "Load Python libaries and API keys.\n\nimport os\nimport openai\nimport pandas as pd\nimport altair as alt\nfrom dotenv import load_dotenv, find_dotenv\n\n\n_ = load_dotenv(find_dotenv()) # read local .env file\nopenai.api_key  = os.environ['OPENAI_API_KEY']"
+  },
+  {
+    "objectID": "code/notebook.html#data",
+    "href": "code/notebook.html#data",
+    "title": "Notebook",
+    "section": "Data",
+    "text": "Data"
   },
   {
     "objectID": "assistants-api.html",
@@ -208,153 +250,69 @@
     "text": "3 Setting Up the Anaconda Environment\nImportant Note: Before proceeding with the creation of the Anaconda environment, ensure you are in the anaconda-env folder where the env-genai.yml file is located. This is crucial because the conda command looks for the YAML file in your current directory.\n\n\n\n\n\n\nWindows-User\n\n\n\n\n\nOpen Anaconda Command Prompt and navigate to the subfolder genai/anaconda-env:\ncd ..\\genai\\anaconda-env\n\n\n\n\n\n\n\n\n\nMac-User\n\n\n\n\n\nOpen the Terminal or use the integrated Terminal in VS Code. Navigate to the subfolder data-collection:\ncd ~/genai/anaconda-env\n\n\n\nCreate the Anaconda Environment:\nconda env create -f env-genai.yml\nThis command will create a new environment named genai and install all the dependencies listed in the YAML file.\nActivate the Environment:\nconda activate genai\nActivating the environment will switch your current session to use the Python version and libraries specified in the environment.\n\n3.1 Understanding the YML-file in its Content\nYAML File: YAML (YAML Ain’t Markup Language) is a human-readable data serialization standard that can be used for configuration files and other forms of data that need to be stored and transmitted. In the context of Anaconda, a YAML file specifies the environment’s name, the channels to install packages from, and the list of dependencies.\nThis Anaconda YAML file is used to create a specific environment named “genai” with a set of predefined packages and dependencies. Here’s a breakdown of its components:\n\nname: Specifies the name of the environment, which is “genai” in this case.\nchannels: Defines the sources where the packages will be downloaded from. It includes “conda-forge” and “defaults”. Conda-forge is a community-led collection of recipes, build infrastructure, and distributions for the conda package manager.\ndependencies: Lists the packages and versions that will be installed in the environment:\n\npython=3.11: Installs Python version 3.11.\npip: Ensures that pip, the Python package installer, is available in the environment.\npip:: Under this entry, it specifies additional Python packages to be installed via pip:\n\npandas: A library providing high-performance, easy-to-use data structures and data analysis tools.\nstreamlit: A tool for creating and sharing custom web apps for machine learning and data science.\nlangchain: Likely a library for language model applications, although the exact purpose may vary depending on the specific package details.\nopenai: Provides access to the APIs of OpenAI, including capabilities like GPT models.\nstreamlit-feedback: An extension for Streamlit to gather user feedback within Streamlit apps.\npython-dotenv: A dependency that allows your application to load environment variables from a .env file which is useful for managing app settings during development and in production.\n\n\n\nThis YAML file helps in managing the environment setup by ensuring that all necessary dependencies are installed using Conda and pip, thereby standardizing the environment setup and facilitating reproducibility across different machines and setups."
   },
   {
-    "objectID": "course-faq.html",
-    "href": "course-faq.html",
-    "title": "FAQ",
-    "section": "",
-    "text": "tbd"
-  },
-  {
-    "objectID": "project-tips-resources.html",
-    "href": "project-tips-resources.html",
+    "objectID": "projekt-ressourcen.html",
+    "href": "projekt-ressourcen.html",
     "title": "Project tips + resources",
     "section": "",
     "text": "Prompt Library (Ethan Mollick)\nOne Useful Thing",
     "crumbs": [
-      "Project",
-      "Tips + resources"
+      "Projekt",
+      "Ressourcen"
     ]
   },
   {
-    "objectID": "project-tips-resources.html#prompting",
-    "href": "project-tips-resources.html#prompting",
+    "objectID": "projekt-ressourcen.html#prompting",
+    "href": "projekt-ressourcen.html#prompting",
     "title": "Project tips + resources",
     "section": "",
     "text": "Prompt Library (Ethan Mollick)\nOne Useful Thing",
     "crumbs": [
-      "Project",
-      "Tips + resources"
+      "Projekt",
+      "Ressourcen"
     ]
   },
   {
-    "objectID": "project-tips-resources.html#teaching-learning-with-ai",
-    "href": "project-tips-resources.html#teaching-learning-with-ai",
+    "objectID": "projekt-ressourcen.html#teaching-learning-with-ai",
+    "href": "projekt-ressourcen.html#teaching-learning-with-ai",
     "title": "Project tips + resources",
     "section": "Teaching & Learning with AI",
     "text": "Teaching & Learning with AI\n\nResearch and Tools on AI and Education, Wharton\nUX Beispiel Kahnmigo\nOpenAI, Teaching with AI",
     "crumbs": [
-      "Project",
-      "Tips + resources"
+      "Projekt",
+      "Ressourcen"
     ]
   },
   {
-    "objectID": "project-tips-resources.html#design-thinking",
-    "href": "project-tips-resources.html#design-thinking",
+    "objectID": "projekt-ressourcen.html#design-thinking",
+    "href": "projekt-ressourcen.html#design-thinking",
     "title": "Project tips + resources",
     "section": "Design Thinking",
     "text": "Design Thinking\n\nDesign Thinking 101\nDesign Thinking 101 (poster)",
     "crumbs": [
-      "Project",
-      "Tips + resources"
+      "Projekt",
+      "Ressourcen"
     ]
   },
   {
-    "objectID": "course-syllabus.html",
-    "href": "course-syllabus.html",
-    "title": "Syllabus",
-    "section": "",
-    "text": "Tag\nZeit\nOrt\n\n\n\n\nVorlesung\nMittwoch\n10:00 - 12:15 Uhr\ni118",
-    "crumbs": [
-      "Course information",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "course-syllabus.html#kursinformationen",
-    "href": "course-syllabus.html#kursinformationen",
-    "title": "Syllabus",
-    "section": "",
-    "text": "Tag\nZeit\nOrt\n\n\n\n\nVorlesung\nMittwoch\n10:00 - 12:15 Uhr\ni118",
-    "crumbs": [
-      "Course information",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "course-syllabus.html#lernziele",
-    "href": "course-syllabus.html#lernziele",
-    "title": "Syllabus",
-    "section": "Lernziele",
-    "text": "Lernziele\nDieser Kurs untersucht das transformative Potenzial der generativen künstlichen Intelligenz (KI) in den Bereichen Lehren und Lernen. Die Studierenden setzen sich mit den neuesten Fortschritten der generativen KI-Technologien auseinander, um deren Anwendungen bei der Automatisierung von Inhaltserstellung, der Personalisierung von Lernmaterialien und der Förderung interaktiver und adaptiver Lernumgebungen zu verstehen.\nAm Ende dieses Kurses werden die Studierenden in der Lage sein:\n\nDie grundlegenden Prinzipien der generativen KI und ihre Relevanz für die Bildung zu verstehen.\nDie potenziellen Auswirkungen der generativen KI auf traditionelle Lehr- und Lernparadigmen kritisch zu analysieren.\nInnovative Bildungswerkzeuge und -ansätze unter Verwendung generativer KI zu entwerfen und zu prototypisieren.",
-    "crumbs": [
-      "Course information",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "course-syllabus.html#kursbewertung",
-    "href": "course-syllabus.html#kursbewertung",
-    "title": "Syllabus",
-    "section": "Kursbewertung",
-    "text": "Kursbewertung\n\nÜberblick\n\n\n\nBewertungskriterien\nPunkte\n\n\n\n\n1. Projektkonzept\n35\n\n\nRecherche\n05\n\n\nBMC, JTBD & VPC, User Persona\n15\n\n\nIDEO Design Kit\n15\n\n\n2. Mock-up und Prototyping\n50\n\n\nGenauigkeit und Funktionalität der Mock-ups\n15\n\n\nPrototyp-Entwicklung inklusive Prompting\n20\n\n\nInnovation und Kreativität\n15\n\n\n3. Präsentation\n15\n\n\nKlarheit und Organisation\n05\n\n\nBezug zu geeigneten Methoden\n05\n\n\nVisuelle und technische Qualität\n05\n\n\nGesamt\n100\n\n\n\n\n\nProjektkonzept\nFür diese Aufgabe benötigen Sie Miro (ein Account wird bereitgestellt).\n\nDurchführung einer umfangreichen Recherche (klare Identifikation und Artikulation des Bildungsproblems oder der Chance, die sich mit Hilfe von KI ergibt). Auf Grundlage der gründlichen Recherche zu Benutzerbedürfnissen und relevantem Kontext (bsow. wie KI eingesetzt werden könnte) kann Aufgabe 2 bearbeitet werden.\nMachen Sie sich zunächst mit dem Business Model Canvas (BMC) vertraut. Darauf aufbauend kann die Thematik Value Proposition Canvas (VPC) in Verbindung mit dem Jobs to be Done (JTBD) Ansatz bearbeitet werden. Auf Grundlage dieser Ansätze kann eine User Persona abgeleitet werden. Im Rahmen dieser Aufgabe sollen die folgenden Inhalte in Miro erstellt werden:\n\n\nCustomer Value Proposition Map\nBusiness Model Canvas\nUser-Persona\n\n\nVerwenden Sie die in Aufgabe 2 erarbeiteten Inhalte um diese Vorlage unter Nutzung des IDEO Design-Kits auszufüllen. Folgende Inhalte müssen bearbeitet werden:\n\n\nFrame Your Design Challenge (p. 33).\nPriorities topics: Card sort (p. 57).\nCreate Insight Statements (p. 83).\nCreate How Might We Questions (p. 87).\nCreate Frameworks (p. 90-93).\nCreate a Storyboard (114).\n\n\n\nMock-up und Prototyping\nFür diese Aufgabe benötigen Sie einen Account bei Figma: Erstellen Sie einen Figma-Account für Studierende; Wählen Sie bei school’s name: Fachhochschule Stuttgart, Hochschule der Medien.\nErstellen Sie gemäß der Erkenntnisse aus dem Projektkonzept mit Hilfe von Figma Wireframes und Mock-Ups:\n\nErstellung eines Mock-Ups in Figma\nErstellung eines Prototyps in Figma und Entwicklung von geeigneten Prompts\n\nTutorials: Figma for Beginners; Einführung in Prototyping mit Figma.\nGenauigkeit und Funktionalität der Mock-ups:\n\nKlarheit, Detail und Realismus der Figma-Mock-ups.\nMock-ups sollten das Aussehen und die Funktionsweise der vorgeschlagenen Lösung genau darstellen.\n\nPrototyp-Entwicklung:\n\nFunktionalität, Benutzerfreundlichkeit und Übereinstimmung des Prototyps mit den Mock-up-Designs.\nBewertung der Fähigkeit des Prototyps, das identifizierte Problem effektiv anzugehen.\nInnovation und Kreativität:\nOriginalität der Lösung und kreative Nutzung der Technologie im Prototyp.\nDas Potenzial der Lösung, die angestrebte Bildungsherausforderung zu bewältigen.\n\n\n\nPräsentation\nKlarheit und Organisation:\n\nDie Präsentation ist gut strukturiert, mit klaren Zielen, Ergebnissen und Schlussfolgerungen.\nEffektive Kommunikation des Wertes und der Auswirkungen des Projekts.\n\nBezug zu geeigneten Methoden:\n\nDie in dem Projekt behandelten Methoden wurden sinnvoll in der Präsentation behandelt.\nVisuelle und technische Qualität:\nVerwendung von Visualisierungen, Demonstrationen und/oder Multimedia zur Verbesserung der Präsentationseffektivität.\nTechnische Gewandtheit bei der Vorstellung des Prototyps.\n\n\n\nZusätzliche Richtlinien:\n\nZusammenarbeit: Die Studierenden werden ermutigt, in Teams zu arbeiten, aber individuelle Beiträge müssen klar definiert sein.\nEthische Überlegungen: Projekte müssen ethische Standards einhalten, insbesondere bei der Verwendung von Daten und der Berücksichtigung von Privatsphäre und Zugänglichkeit.\nFortschrittsupdates: Regelmäßige Check-ins oder Fortschrittsberichte werden empfohlen, um sicherzustellen, dass die Projekte auf Kurs bleiben und mit den Kurszielen übereinstimmen.",
-    "crumbs": [
-      "Course information",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "course-syllabus.html#benotung",
-    "href": "course-syllabus.html#benotung",
-    "title": "Syllabus",
-    "section": "Benotung",
-    "text": "Benotung\nDie Endnote wird auf Basis der folgenden Schwellenwerte bestimmt:\n\n\n\nNote\nPunkte\n\n\n\n\n1,0\n96 - 100\n\n\n1,3\n91 - 95\n\n\n1,7\n85 - 90\n\n\n2,0\n80 - 84\n\n\n2,3\n75 - 79\n\n\n2,7\n70 - 74\n\n\n3,0\n65 - 69\n\n\n3,3\n60 - 64\n\n\n3,7\n55 - 59\n\n\n4,0\n50 - 54\n\n\n4,7\n15 - 49\n\n\n5,0\n0 - 14",
-    "crumbs": [
-      "Course information",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "course-syllabus.html#richtlinie-für-verspätete-abgaben",
-    "href": "course-syllabus.html#richtlinie-für-verspätete-abgaben",
-    "title": "Syllabus",
-    "section": "Richtlinie für verspätete Abgaben",
-    "text": "Richtlinie für verspätete Abgaben\nDie Abgabefristen für Aufgaben sind dazu da, Ihnen zu helfen, mit dem Kursmaterial Schritt zu halten. Ich verstehe jedoch, dass gelegentlich Dinge vorkommen können, die es schwierig machen, eine Aufgabe fristgerecht einzureichen. Hier sind die Regeln für verspätete Einreichungen:\n\nProjektaufgaben können bis zu 2 Tage zu spät eingereicht werden. Für jeden 24-Stunden-Zeitraum, in dem die Projektaufgabe zu spät ist, gibt es einen Abzug von 25%.\n\nWenn wichtige Umstände Sie daran hindern, eine Labor- oder Hausaufgabe bis zum angegebenen Abgabetermin abzuschließen, können Sie mir vor der Frist eine E-Mail an kirenz@hdm-stuttgart.de senden.",
-    "crumbs": [
-      "Course information",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "course-syllabus.html#wo-sie-hilfe-bekommen",
-    "href": "course-syllabus.html#wo-sie-hilfe-bekommen",
-    "title": "Syllabus",
-    "section": "Wo Sie Hilfe bekommen",
-    "text": "Wo Sie Hilfe bekommen\n\nWenn Sie während der Vorlesung eine Frage haben, zögern Sie nicht, sie zu stellen!\nAußerhalb des Unterrichts sollten allgemeine Fragen zu Kursinhalten oder Aufgaben im Moodle-Kursforum gepostet werden.\nE-Mails sollten für Fragen reserviert sein, die nicht für das öffentliche Forum geeignet sind. Wenn Sie mir eine E-Mail schicken, fügen Sie bitte den Namen unseres Kurses in die Betreffzeile ein.\n\nSchauen Sie sich die Support-Seite für weitere Ressourcen an.",
-    "crumbs": [
-      "Course information",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "project-description.html",
-    "href": "project-description.html",
+    "objectID": "projekt-beschreibung.html",
+    "href": "projekt-beschreibung.html",
     "title": "Project",
     "section": "",
     "text": "Nr\nDate\nMilestone\nDescription\n\n\n\n\n1\n15.04\nUnderstanding and Empathy Assignment Due\nSubmission of problem identification, user personas, and jobs to be done analysis\n\n\n2\n14.05\nIdeation and Prototype Planning Assignment Due\nSubmission of ideas and selected concept for prototyping, including justifications\n\n\n3\n28.05\nFidelity and Functionality of Mock-ups Due\nSubmission of detailed mock-ups using tools like Figma\n\n\n4\ntbd\nFinal Documentation and Prototype Due\nSubmission of prototype and project documentation\n\n\n5\ntbd\nFinal Presentation\nStudents present their final projects showcasing their prototypes and development journey\n\n\n\n\n\n\n\n\nMain Tasks: Identify the educational challenge your project will address. Create detailed user personas and conduct a jobs to be done analysis to understand the needs and motivations of your target users. Document your findings clearly.\n\n\n\n\n\nMain Tasks: Generate a wide range of ideas to address the identified challenge. Select the most promising concept based on criteria like feasibility, impact, and innovation. Outline your prototype planning, including the scope and key features of your selected concept.\n\n\n\n\n\nMain Tasks: Use Figma or a similar tool to create detailed mock-ups of your solution. These should visually communicate the design and functionality of your concept, including user interface and user experience aspects.\n\n\n\n\n\nMain Tasks: Develop a working prototype that brings your mock-ups to life. Ensure that the prototype is functional and demonstrates the key features of your solution. Prepare a video demonstration or an interactive link to showcase your prototype. Hand in your project documentation. Ensure that all sections are comprehensive and reflective of your project’s development process.\n\n\n\n\n\nMain Tasks: Present your project to the class, focusing on the problem identified, your design process, prototype development, and the potential impact of your solution. Be prepared to answer questions and discuss your project in depth.",
     "crumbs": [
-      "Project",
-      "Description"
+      "Projekt",
+      "Beschreibung"
     ]
   },
   {
-    "objectID": "project-description.html#project-deadlines",
-    "href": "project-description.html#project-deadlines",
+    "objectID": "projekt-beschreibung.html#project-deadlines",
+    "href": "projekt-beschreibung.html#project-deadlines",
     "title": "Project",
     "section": "",
     "text": "Nr\nDate\nMilestone\nDescription\n\n\n\n\n1\n15.04\nUnderstanding and Empathy Assignment Due\nSubmission of problem identification, user personas, and jobs to be done analysis\n\n\n2\n14.05\nIdeation and Prototype Planning Assignment Due\nSubmission of ideas and selected concept for prototyping, including justifications\n\n\n3\n28.05\nFidelity and Functionality of Mock-ups Due\nSubmission of detailed mock-ups using tools like Figma\n\n\n4\ntbd\nFinal Documentation and Prototype Due\nSubmission of prototype and project documentation\n\n\n5\ntbd\nFinal Presentation\nStudents present their final projects showcasing their prototypes and development journey\n\n\n\n\n\n\n\n\nMain Tasks: Identify the educational challenge your project will address. Create detailed user personas and conduct a jobs to be done analysis to understand the needs and motivations of your target users. Document your findings clearly.\n\n\n\n\n\nMain Tasks: Generate a wide range of ideas to address the identified challenge. Select the most promising concept based on criteria like feasibility, impact, and innovation. Outline your prototype planning, including the scope and key features of your selected concept.\n\n\n\n\n\nMain Tasks: Use Figma or a similar tool to create detailed mock-ups of your solution. These should visually communicate the design and functionality of your concept, including user interface and user experience aspects.\n\n\n\n\n\nMain Tasks: Develop a working prototype that brings your mock-ups to life. Ensure that the prototype is functional and demonstrates the key features of your solution. Prepare a video demonstration or an interactive link to showcase your prototype. Hand in your project documentation. Ensure that all sections are comprehensive and reflective of your project’s development process.\n\n\n\n\n\nMain Tasks: Present your project to the class, focusing on the problem identified, your design process, prototype development, and the potential impact of your solution. Be prepared to answer questions and discuss your project in depth.",
     "crumbs": [
-      "Project",
-      "Description"
+      "Projekt",
+      "Beschreibung"
     ]
   },
   {
@@ -362,46 +320,11 @@
     "href": "index.html",
     "title": "Generative AI in Education",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the semester.\n\n\n\n\n\n\nNote\n\n\n\nNote that this schedule will be updated as the semester progresses and the timeline of topics and assignments might be updated throughout the semester.",
+    "text": "This page contains an outline of the topics, content, and assignments for the semester.\n\n\n\n\n\n\nNote that this schedule will be updated as the semester progresses and the timeline of topics and assignments might be updated throughout the semester.",
     "crumbs": [
-      "Course information",
-      "Schedule"
+      "Kurs-Hinweise",
+      "Willkommen"
     ]
-  },
-  {
-    "objectID": "course-support.html",
-    "href": "course-support.html",
-    "title": "Course support",
-    "section": "",
-    "text": "If you have a question during lecture, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone."
-  },
-  {
-    "objectID": "course-support.html#lectures",
-    "href": "course-support.html#lectures",
-    "title": "Course support",
-    "section": "",
-    "text": "If you have a question during lecture, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone."
-  },
-  {
-    "objectID": "course-support.html#discussion-forum",
-    "href": "course-support.html#discussion-forum",
-    "title": "Course support",
-    "section": "Discussion forum",
-    "text": "Discussion forum\nPrefer to write out your question in detail rather than asking in person? The online discussion forum is the best venue for these! We will use the Moodle forum as the online discussion forum. There is a chance another student has already asked a similar question, so please check the other posts before adding a new question. If you know the answer to a question that is posted, I encourage you to respond!"
-  },
-  {
-    "objectID": "course-support.html#email",
-    "href": "course-support.html#email",
-    "title": "Course support",
-    "section": "Email",
-    "text": "Email\nPlease refrain from emailing any course content questions (those should go to Moodle), and only use email for questions about personal matters that may not be appropriate for the public course forum. For such matters, you may email me at kirenz@hdm-stuttgart.de.\nIf there is a question that’s not appropriate for the public forum, you are welcome to email me directly. If you email me, please include the name of our course in the subject line."
-  },
-  {
-    "objectID": "course-support.html#academic-support",
-    "href": "course-support.html#academic-support",
-    "title": "Course support",
-    "section": "Academic support",
-    "text": "Academic support\nThere are times you may need help with the class that is beyond what can be provided by the teaching team. In those instances, I encourage you to visit the Center for Learning and Development: it offers free services to all students."
   },
   {
     "objectID": "anaconda-environment.html",
@@ -432,32 +355,95 @@
     "text": "3 Setting Up the Anaconda Environment\nImportant Note: Before proceeding with the creation of the Anaconda environment, ensure you are in the anaconda-env folder where the env-genai.yml file is located. This is crucial because the conda command looks for the YAML file in your current directory.\n\n\n\n\n\n\nWindows-User\n\n\n\n\n\nOpen Anaconda Command Prompt and navigate to the subfolder genai/anaconda-env:\ncd ..\\genai\\anaconda-env\n\n\n\n\n\n\n\n\n\nMac-User\n\n\n\n\n\nOpen the Terminal or use the integrated Terminal in VS Code. Navigate to the subfolder data-collection:\ncd ~/genai/anaconda-env\n\n\n\nCreate the Anaconda Environment:\nconda env create -f env-genai.yml\nThis command will create a new environment named genai and install all the dependencies listed in the YAML file.\nActivate the Environment:\nconda activate genai\nActivating the environment will switch your current session to use the Python version and libraries specified in the environment.\n\n3.1 Understanding the YML-file in its Content\nYAML File: YAML (YAML Ain’t Markup Language) is a human-readable data serialization standard that can be used for configuration files and other forms of data that need to be stored and transmitted. In the context of Anaconda, a YAML file specifies the environment’s name, the channels to install packages from, and the list of dependencies.\nThis Anaconda YAML file is used to create a specific environment named “genai” with a set of predefined packages and dependencies. Here’s a breakdown of its components:\n\nname: Specifies the name of the environment, which is “genai” in this case.\nchannels: Defines the sources where the packages will be downloaded from. It includes “conda-forge” and “defaults”. Conda-forge is a community-led collection of recipes, build infrastructure, and distributions for the conda package manager.\ndependencies: Lists the packages and versions that will be installed in the environment:\n\npython=3.11: Installs Python version 3.11.\npip: Ensures that pip, the Python package installer, is available in the environment.\npip:: Under this entry, it specifies additional Python packages to be installed via pip:\n\npandas: A library providing high-performance, easy-to-use data structures and data analysis tools.\nstreamlit: A tool for creating and sharing custom web apps for machine learning and data science.\nopenai: Provides access to the APIs of OpenAI, including capabilities like GPT models.\nstreamlit-feedback: An extension for Streamlit to gather user feedback within Streamlit apps.\npython-dotenv: A dependency that allows your application to load environment variables from a .env file which is useful for managing app settings during development and in production.\n\n\n\nThis YAML file helps in managing the environment setup by ensuring that all necessary dependencies are installed using Conda and pip, thereby standardizing the environment setup and facilitating reproducibility across different machines and setups."
   },
   {
-    "objectID": "course-overview.html",
-    "href": "course-overview.html",
+    "objectID": "kurs-hinweise.html",
+    "href": "kurs-hinweise.html",
     "title": "Course overview",
     "section": "",
     "text": "Generative AI has the potential to fundamentally change the way we teach and learn. By automating content creation, personalizing learning materials, and supporting interactive and adaptive learning environments, generative AI can help make educational processes more efficient, accessible, and engaging.\nThe main goal of this project is to explore the potential of generative Artificial Intelligence (AI) in the field of teaching and learning.\nThis involves investigating how generative AI can be used meaningfully and effectively for the development of new and innovative pedagogical approaches and formats. The focus is on exploring the possibilities of how generative AI can enrich and transform the educational landscape. This is done through research and working with prototypes."
   },
   {
-    "objectID": "code/notebook.html",
-    "href": "code/notebook.html",
-    "title": "Notebook",
+    "objectID": "programming-requirements.html",
+    "href": "programming-requirements.html",
+    "title": "Requirements",
     "section": "",
-    "text": "Load Python libaries and API keys.\n\nimport os\nimport openai\nimport pandas as pd\nimport altair as alt\nfrom dotenv import load_dotenv, find_dotenv\n\n\n_ = load_dotenv(find_dotenv()) # read local .env file\nopenai.api_key  = os.environ['OPENAI_API_KEY']"
+    "text": "For this course you can use the following setup:\n\nPython: Anaconda, Anaconda Environment genai and Visual Studio Code\nEnvironment: OpenAI API and an environment file with your APIs\n\n\n\n\n\n\n\nVisit the “Programming Toolkit-webpage” to learn how to meet all requirements."
   },
   {
-    "objectID": "code/notebook.html#setup",
-    "href": "code/notebook.html#setup",
-    "title": "Notebook",
+    "objectID": "kurs-syllabus.html",
+    "href": "kurs-syllabus.html",
+    "title": "Syllabus",
     "section": "",
-    "text": "Load Python libaries and API keys.\n\nimport os\nimport openai\nimport pandas as pd\nimport altair as alt\nfrom dotenv import load_dotenv, find_dotenv\n\n\n_ = load_dotenv(find_dotenv()) # read local .env file\nopenai.api_key  = os.environ['OPENAI_API_KEY']"
+    "text": "Tag\nZeit\nOrt\n\n\n\n\nVorlesung\nMittwoch\n10:00 - 12:15 Uhr\ni118",
+    "crumbs": [
+      "Kurs-Hinweise",
+      "Syllabus"
+    ]
   },
   {
-    "objectID": "code/notebook.html#data",
-    "href": "code/notebook.html#data",
-    "title": "Notebook",
-    "section": "Data",
-    "text": "Data"
+    "objectID": "kurs-syllabus.html#kursinformationen",
+    "href": "kurs-syllabus.html#kursinformationen",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Tag\nZeit\nOrt\n\n\n\n\nVorlesung\nMittwoch\n10:00 - 12:15 Uhr\ni118",
+    "crumbs": [
+      "Kurs-Hinweise",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "kurs-syllabus.html#lernziele",
+    "href": "kurs-syllabus.html#lernziele",
+    "title": "Syllabus",
+    "section": "Lernziele",
+    "text": "Lernziele\nDieser Kurs untersucht das transformative Potenzial der generativen künstlichen Intelligenz (KI) in den Bereichen Lehren und Lernen. Die Studierenden setzen sich mit den neuesten Fortschritten der generativen KI-Technologien auseinander, um deren Anwendungen bei der Automatisierung von Inhaltserstellung, der Personalisierung von Lernmaterialien und der Förderung interaktiver und adaptiver Lernumgebungen zu verstehen.\nAm Ende dieses Kurses werden die Studierenden in der Lage sein:\n\nDie grundlegenden Prinzipien der generativen KI und ihre Relevanz für die Bildung zu verstehen.\nDie potenziellen Auswirkungen der generativen KI auf traditionelle Lehr- und Lernparadigmen kritisch zu analysieren.\nInnovative Bildungswerkzeuge und -ansätze unter Verwendung generativer KI zu entwerfen und zu prototypisieren.",
+    "crumbs": [
+      "Kurs-Hinweise",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "kurs-syllabus.html#kursbewertung",
+    "href": "kurs-syllabus.html#kursbewertung",
+    "title": "Syllabus",
+    "section": "Kursbewertung",
+    "text": "Kursbewertung\n\nÜberblick\n\n\n\nBewertungskriterien\nPunkte\n\n\n\n\n1. Projektkonzept\n35\n\n\nRecherche\n05\n\n\nBMC, JTBD & VPC, User Persona\n15\n\n\nIDEO Design Kit\n15\n\n\n2. Mock-up und Prototyping\n50\n\n\nGenauigkeit und Funktionalität der Mock-ups\n15\n\n\nPrototyp-Entwicklung inklusive Prompting\n20\n\n\nInnovation und Kreativität\n15\n\n\n3. Präsentation\n15\n\n\nKlarheit und Organisation\n05\n\n\nBezug zu geeigneten Methoden\n05\n\n\nVisuelle und technische Qualität\n05\n\n\nGesamt\n100\n\n\n\n\n\nProjektkonzept\nFür diese Aufgabe benötigen Sie Miro (ein Account wird bereitgestellt).\n\nDurchführung einer umfangreichen Recherche (klare Identifikation und Artikulation des Bildungsproblems oder der Chance, die sich mit Hilfe von KI ergibt). Auf Grundlage der gründlichen Recherche zu Benutzerbedürfnissen und relevantem Kontext (bsow. wie KI eingesetzt werden könnte) kann Aufgabe 2 bearbeitet werden.\nMachen Sie sich zunächst mit dem Business Model Canvas (BMC) vertraut. Darauf aufbauend kann die Thematik Value Proposition Canvas (VPC) in Verbindung mit dem Jobs to be Done (JTBD) Ansatz bearbeitet werden. Auf Grundlage dieser Ansätze kann eine User Persona abgeleitet werden. Im Rahmen dieser Aufgabe sollen die folgenden Inhalte in Miro erstellt werden:\n\n\nCustomer Value Proposition Map\nBusiness Model Canvas\nUser-Persona\n\n\nVerwenden Sie die in Aufgabe 2 erarbeiteten Inhalte um diese Vorlage unter Nutzung des IDEO Design-Kits auszufüllen. Folgende Inhalte müssen bearbeitet werden:\n\n\nFrame Your Design Challenge (p. 33).\nPriorities topics: Card sort (p. 57).\nCreate Insight Statements (p. 83).\nCreate How Might We Questions (p. 87).\nCreate Frameworks (p. 90-93).\nCreate a Storyboard (114).\n\n\n\nMock-up und Prototyping\nFür diese Aufgabe benötigen Sie einen Account bei Figma: Erstellen Sie einen Figma-Account für Studierende; Wählen Sie bei school’s name: Fachhochschule Stuttgart, Hochschule der Medien.\nErstellen Sie gemäß der Erkenntnisse aus dem Projektkonzept mit Hilfe von Figma Wireframes und Mock-Ups:\n\nErstellung eines Mock-Ups in Figma\nErstellung eines Prototyps in Figma und Entwicklung von geeigneten Prompts\n\nTutorials: Figma for Beginners; Einführung in Prototyping mit Figma.\nGenauigkeit und Funktionalität der Mock-ups:\n\nKlarheit, Detail und Realismus der Figma-Mock-ups.\nMock-ups sollten das Aussehen und die Funktionsweise der vorgeschlagenen Lösung genau darstellen.\n\nPrototyp-Entwicklung:\n\nFunktionalität, Benutzerfreundlichkeit und Übereinstimmung des Prototyps mit den Mock-up-Designs.\nBewertung der Fähigkeit des Prototyps, das identifizierte Problem effektiv anzugehen.\nInnovation und Kreativität:\nOriginalität der Lösung und kreative Nutzung der Technologie im Prototyp.\nDas Potenzial der Lösung, die angestrebte Bildungsherausforderung zu bewältigen.\n\n\n\nPräsentation\nKlarheit und Organisation:\n\nDie Präsentation ist gut strukturiert, mit klaren Zielen, Ergebnissen und Schlussfolgerungen.\nEffektive Kommunikation des Wertes und der Auswirkungen des Projekts.\n\nBezug zu geeigneten Methoden:\n\nDie in dem Projekt behandelten Methoden wurden sinnvoll in der Präsentation behandelt.\nVisuelle und technische Qualität:\nVerwendung von Visualisierungen, Demonstrationen und/oder Multimedia zur Verbesserung der Präsentationseffektivität.\nTechnische Gewandtheit bei der Vorstellung des Prototyps.\n\n\n\nZusätzliche Richtlinien:\n\nZusammenarbeit: Die Studierenden werden ermutigt, in Teams zu arbeiten, aber individuelle Beiträge müssen klar definiert sein.\nEthische Überlegungen: Projekte müssen ethische Standards einhalten, insbesondere bei der Verwendung von Daten und der Berücksichtigung von Privatsphäre und Zugänglichkeit.\nFortschrittsupdates: Regelmäßige Check-ins oder Fortschrittsberichte werden empfohlen, um sicherzustellen, dass die Projekte auf Kurs bleiben und mit den Kurszielen übereinstimmen.",
+    "crumbs": [
+      "Kurs-Hinweise",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "kurs-syllabus.html#benotung",
+    "href": "kurs-syllabus.html#benotung",
+    "title": "Syllabus",
+    "section": "Benotung",
+    "text": "Benotung\nDie Endnote wird auf Basis der folgenden Schwellenwerte bestimmt:\n\n\n\nNote\nPunkte\n\n\n\n\n1,0\n96 - 100\n\n\n1,3\n91 - 95\n\n\n1,7\n85 - 90\n\n\n2,0\n80 - 84\n\n\n2,3\n75 - 79\n\n\n2,7\n70 - 74\n\n\n3,0\n65 - 69\n\n\n3,3\n60 - 64\n\n\n3,7\n55 - 59\n\n\n4,0\n50 - 54\n\n\n4,7\n15 - 49\n\n\n5,0\n0 - 14",
+    "crumbs": [
+      "Kurs-Hinweise",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "kurs-syllabus.html#richtlinie-für-verspätete-abgaben",
+    "href": "kurs-syllabus.html#richtlinie-für-verspätete-abgaben",
+    "title": "Syllabus",
+    "section": "Richtlinie für verspätete Abgaben",
+    "text": "Richtlinie für verspätete Abgaben\nDie Abgabefristen für Aufgaben sind dazu da, Ihnen zu helfen, mit dem Kursmaterial Schritt zu halten. Ich verstehe jedoch, dass gelegentlich Dinge vorkommen können, die es schwierig machen, eine Aufgabe fristgerecht einzureichen. Hier sind die Regeln für verspätete Einreichungen:\n\nProjektaufgaben können bis zu 2 Tage zu spät eingereicht werden. Für jeden 24-Stunden-Zeitraum, in dem die Projektaufgabe zu spät ist, gibt es einen Abzug von 25%.\n\nWenn wichtige Umstände Sie daran hindern, eine Labor- oder Hausaufgabe bis zum angegebenen Abgabetermin abzuschließen, können Sie mir vor der Frist eine E-Mail an kirenz@hdm-stuttgart.de senden.",
+    "crumbs": [
+      "Kurs-Hinweise",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "kurs-syllabus.html#wo-sie-hilfe-bekommen",
+    "href": "kurs-syllabus.html#wo-sie-hilfe-bekommen",
+    "title": "Syllabus",
+    "section": "Wo Sie Hilfe bekommen",
+    "text": "Wo Sie Hilfe bekommen\n\nWenn Sie während der Vorlesung eine Frage haben, zögern Sie nicht, sie zu stellen!\nAußerhalb des Unterrichts sollten allgemeine Fragen zu Kursinhalten oder Aufgaben im Moodle-Kursforum gepostet werden.\nE-Mails sollten für Fragen reserviert sein, die nicht für das öffentliche Forum geeignet sind. Wenn Sie mir eine E-Mail schicken, fügen Sie bitte den Namen unseres Kurses in die Betreffzeile ein.\n\nSchauen Sie sich die Support-Seite für weitere Ressourcen an.",
+    "crumbs": [
+      "Kurs-Hinweise",
+      "Syllabus"
+    ]
   },
   {
     "objectID": "docs/jobs-to-be-done.html",
@@ -631,63 +617,63 @@
     "objectID": "docs/buyer-persona.html#unterschied-zu-zielgruppen",
     "href": "docs/buyer-persona.html#unterschied-zu-zielgruppen",
     "title": "Buyer Persona",
-    "section": "Unterschied zu Zielgruppen",
-    "text": "Unterschied zu Zielgruppen\n\nZielgruppen sind breiter und weniger detailliert als Buyer Personas.\nZielgruppen basieren auf demografischen Merkmalen, während Buyer Personas tiefergehende Informationen beinhalten."
+    "section": "2 Unterschied zu Zielgruppen",
+    "text": "2 Unterschied zu Zielgruppen\n\nZielgruppen sind breiter und weniger detailliert als Buyer Personas.\nZielgruppen basieren auf demografischen Merkmalen, während Buyer Personas tiefergehende Informationen beinhalten."
   },
   {
     "objectID": "docs/buyer-persona.html#unterschied-zu-user-personas",
     "href": "docs/buyer-persona.html#unterschied-zu-user-personas",
     "title": "Buyer Persona",
-    "section": "Unterschied zu User Personas",
-    "text": "Unterschied zu User Personas\n\nUser Personas repräsentieren Nutzer eines Produkts oder Services, fokussieren auf Nutzerverhalten und -erfahrungen.\nBuyer Personas sind für Marketing und Vertrieb relevant, während User Personas für Produktentwicklung und Design genutzt werden.\n\nWährend beide Personas ähnliche Konzepte sind, unterscheiden sie sich in ihrem Fokus. Eine Buyer Persona konzentriert sich auf die Merkmale und Verhaltensweisen des Käufers, einschließlich demografischer Daten, um ein besseres Verständnis für Marketing und Vertrieb zu schaffen. Im Gegensatz dazu richtet sich eine User Persona auf die Erfahrungen und Bedürfnisse der tatsächlichen Nutzer eines Produkts oder Dienstes, um dessen Benutzerfreundlichkeit zu optimieren. Bei Vertriebssoftware beispielsweise adressiert die Buyer Persona den Vertriebsleiter oder Geschäftsinhaber als Käufer, während die User Persona den Vertriebsmitarbeiter als Endnutzer fokussiert."
+    "section": "3 Unterschied zu User Personas",
+    "text": "3 Unterschied zu User Personas\n\nUser Personas repräsentieren Nutzer eines Produkts oder Services, fokussieren auf Nutzerverhalten und -erfahrungen.\nBuyer Personas sind für Marketing und Vertrieb relevant, während User Personas für Produktentwicklung und Design genutzt werden.\n\nWährend beide Personas ähnliche Konzepte sind, unterscheiden sie sich in ihrem Fokus. Eine Buyer Persona konzentriert sich auf die Merkmale und Verhaltensweisen des Käufers, einschließlich demografischer Daten, um ein besseres Verständnis für Marketing und Vertrieb zu schaffen. Im Gegensatz dazu richtet sich eine User Persona auf die Erfahrungen und Bedürfnisse der tatsächlichen Nutzer eines Produkts oder Dienstes, um dessen Benutzerfreundlichkeit zu optimieren. Bei Vertriebssoftware beispielsweise adressiert die Buyer Persona den Vertriebsleiter oder Geschäftsinhaber als Käufer, während die User Persona den Vertriebsmitarbeiter als Endnutzer fokussiert."
   },
   {
     "objectID": "docs/buyer-persona.html#integration-des-jobs-to-be-done-ansatzes",
     "href": "docs/buyer-persona.html#integration-des-jobs-to-be-done-ansatzes",
     "title": "Buyer Persona",
-    "section": "Integration des Jobs-to-be-Done-Ansatzes",
-    "text": "Integration des Jobs-to-be-Done-Ansatzes\nDer JTBD-Ansatz kann in Buyer Personas integriert werden, indem er sich auf die spezifischen Aufgaben konzentriert, die Käufer/innen erledigen möchten, und bietet tiefere Einblicke in ihre wahren Bedürfnisse und Ziele."
+    "section": "4 Integration des Jobs-to-be-Done-Ansatzes",
+    "text": "4 Integration des Jobs-to-be-Done-Ansatzes\nDer JTBD-Ansatz kann in Buyer Personas integriert werden, indem er sich auf die spezifischen Aufgaben konzentriert, die Käufer/innen erledigen möchten, und bietet tiefere Einblicke in ihre wahren Bedürfnisse und Ziele."
   },
   {
     "objectID": "docs/buyer-persona.html#erstellung-von-buyer-personas-mit-jtbd",
     "href": "docs/buyer-persona.html#erstellung-von-buyer-personas-mit-jtbd",
     "title": "Buyer Persona",
-    "section": "Erstellung von Buyer Personas mit JTBD",
-    "text": "Erstellung von Buyer Personas mit JTBD\n\nRecherche: Um genaue Personas zu erstellen, werden Umfragen, Interviews und Datenanalysen genutzt, um demografische Daten, Vorlieben, Verhalten und Motivationen zu sammeln.\nErmittlung der ‘Jobs’: Zusätzlich zu demografischen und psychografischen Daten werden die spezifischen ‘Jobs’ erfasst, die Käufer*innen mit dem Produkt oder der Dienstleistung erledigen wollen (dabei sollten funktionale, emotionale und soziale Nutzenkomponenten berücksichtigt werden).\nIntegration in die Persona-Beschreibung: Die identifizierten ‘Jobs’ werden in die Beschreibung der Buyer Persona integriert, um ein umfassenderes Bild der Käufer*innen zu erstellen.\nFokus auf Lösungen: Marketingbotschaften werden so gestaltet, dass sie genau auf die ‘Jobs’ zugeschnitten sind, die Käufer*innen erledigen möchten."
+    "section": "5 Erstellung von Buyer Personas mit JTBD",
+    "text": "5 Erstellung von Buyer Personas mit JTBD\n\nRecherche: Um genaue Personas zu erstellen, werden Umfragen, Interviews und Datenanalysen genutzt, um demografische Daten, Vorlieben, Verhalten und Motivationen zu sammeln.\nErmittlung der ‘Jobs’: Zusätzlich zu demografischen und psychografischen Daten werden die spezifischen ‘Jobs’ erfasst, die Käufer*innen mit dem Produkt oder der Dienstleistung erledigen wollen (dabei sollten funktionale, emotionale und soziale Nutzenkomponenten berücksichtigt werden).\nIntegration in die Persona-Beschreibung: Die identifizierten ‘Jobs’ werden in die Beschreibung der Buyer Persona integriert, um ein umfassenderes Bild der Käufer*innen zu erstellen.\nFokus auf Lösungen: Marketingbotschaften werden so gestaltet, dass sie genau auf die ‘Jobs’ zugeschnitten sind, die Käufer*innen erledigen möchten."
   },
   {
     "objectID": "docs/buyer-persona.html#schlüsselelemente-einer-buyer-persona",
     "href": "docs/buyer-persona.html#schlüsselelemente-einer-buyer-persona",
     "title": "Buyer Persona",
-    "section": "Schlüsselelemente einer Buyer Persona",
-    "text": "Schlüsselelemente einer Buyer Persona\n\nHintergrund: Beruf, Karriereweg, Familiensituation.\nDemografische Daten: Geschlecht, Alter, Einkommen, Wohnort.\nIdentifikatoren: Verhaltensmuster, bevorzugte Kommunikationskanäle.\nZiele und Herausforderungen: Persönliche und berufliche Ambitionen (inklusive Jobs), Hindernisse.\nEchte Zitate: Direkte Aussagen von Kunden.\nHäufige Einwände: Typische Vorbehalte gegenüber Produkten/Dienstleistungen.\nMarketing-Botschaft: Positionierung der Marke oder des Produkts."
+    "section": "6 Schlüsselelemente einer Buyer Persona",
+    "text": "6 Schlüsselelemente einer Buyer Persona\n\nHintergrund: Beruf, Karriereweg, Familiensituation.\nDemografische Daten: Geschlecht, Alter, Einkommen, Wohnort.\nIdentifikatoren: Verhaltensmuster, bevorzugte Kommunikationskanäle.\nZiele und Herausforderungen: Persönliche und berufliche Ambitionen (inklusive Jobs), Hindernisse.\nEchte Zitate: Direkte Aussagen von Kunden.\nHäufige Einwände: Typische Vorbehalte gegenüber Produkten/Dienstleistungen.\nMarketing-Botschaft: Positionierung der Marke oder des Produkts."
   },
   {
     "objectID": "docs/buyer-persona.html#anwendungsbereiche",
     "href": "docs/buyer-persona.html#anwendungsbereiche",
     "title": "Buyer Persona",
-    "section": "Anwendungsbereiche",
-    "text": "Anwendungsbereiche\n\nMarketing: Erstellung zielgerichteter Kampagnen.\nVertrieb: Besseres Verständnis der Kundenbedürfnisse.\nProduktentwicklung: Anpassung an spezifische Kundenanforderungen."
+    "section": "7 Anwendungsbereiche",
+    "text": "7 Anwendungsbereiche\n\nMarketing: Erstellung zielgerichteter Kampagnen.\nVertrieb: Besseres Verständnis der Kundenbedürfnisse.\nProduktentwicklung: Anpassung an spezifische Kundenanforderungen."
   },
   {
     "objectID": "docs/buyer-persona.html#vorteile",
     "href": "docs/buyer-persona.html#vorteile",
     "title": "Buyer Persona",
-    "section": "Vorteile",
-    "text": "Vorteile\n\nVerbessertes Verständnis der Kunden.\nEffektiveres und zielgerichtetes Marketing.\nSteigerung der Kundenzufriedenheit und -bindung.\n\nIm Marketing helfen Buyer-Personas den Marketingteams, ihre Marketingaktivitäten gezielt einzusetzen. Mithilfe von Buyer Personas weiß das Marketingteam, welche Art von Inhalten bei seiner Zielgruppe Anklang findet. So können sie sicherstellen, dass alle veröffentlichten Inhalte auf das abgestimmt sind, was die Kunden tatsächlich interessiert."
+    "section": "8 Vorteile",
+    "text": "8 Vorteile\n\nVerbessertes Verständnis der Kunden.\nEffektiveres und zielgerichtetes Marketing.\nSteigerung der Kundenzufriedenheit und -bindung.\n\nIm Marketing helfen Buyer-Personas den Marketingteams, ihre Marketingaktivitäten gezielt einzusetzen. Mithilfe von Buyer Personas weiß das Marketingteam, welche Art von Inhalten bei seiner Zielgruppe Anklang findet. So können sie sicherstellen, dass alle veröffentlichten Inhalte auf das abgestimmt sind, was die Kunden tatsächlich interessiert."
   },
   {
     "objectID": "docs/buyer-persona.html#ressourcen",
     "href": "docs/buyer-persona.html#ressourcen",
     "title": "Buyer Persona",
-    "section": "Ressourcen",
-    "text": "Ressourcen\n\nMiro Buyer Persona-Template\nPPT-Template für die Erstellung von Buyer Personas\nBuyer Persona Tool von HubSpot"
+    "section": "9 Ressourcen",
+    "text": "9 Ressourcen\n\nMiro Buyer Persona-Template\nPPT-Template für die Erstellung von Buyer Personas\nBuyer Persona Tool von HubSpot"
   },
   {
     "objectID": "docs/buyer-persona.html#nächste-schritte",
     "href": "docs/buyer-persona.html#nächste-schritte",
     "title": "Buyer Persona",
-    "section": "Nächste Schritte",
-    "text": "Nächste Schritte\nNachdem die Persona erstellt wurde, können die Bedürfnisse dieser Persona mit der Wertkarte (Value Map) eines Unternehmens mit Hilfe des Value Proposition Canvas abgeglichen werden."
+    "section": "10 Nächste Schritte",
+    "text": "10 Nächste Schritte\nNachdem die Persona erstellt wurde, können die Bedürfnisse dieser Persona mit der Wertkarte (Value Map) eines Unternehmens mit Hilfe des Value Proposition Canvas abgeglichen werden."
   }
 ]
